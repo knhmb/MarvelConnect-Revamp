@@ -43,4 +43,10 @@
   margin-top: 2rem;
   margin-left: 3rem;
 }
+
+@media screen and (max-width: 900px) {
+  .section-3 p {
+    font-size: 20px;
+  }
+}
 </style>

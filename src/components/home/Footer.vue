@@ -141,4 +141,15 @@
   letter-spacing: 0.055em;
   color: #545453;
 }
+
+@media screen and (max-width: 500px) {
+  .footer .explore ul {
+    /* margin: 1.5rem 0; */
+    display: block;
+  }
+
+  .footer .explore li {
+    margin-bottom: 1rem;
+  }
+}
 </style>

@@ -18,4 +18,8 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  width: 100vw;
+}
 </style>

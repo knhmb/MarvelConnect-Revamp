@@ -9,7 +9,7 @@
           <!-- </transition> -->
         </el-col>
         <el-col class="last-col-head" :span="12">
-          <span class="menu-text">Let's Talk</span>
+          <span class="menu-text hidden-sm-and-down">Let's Talk</span>
           <div class="nav">
             <div class="one"></div>
             <div class="two"></div>
@@ -106,7 +106,7 @@ header {
   background-image: url("../../assets/Group-72.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .header-content {
@@ -208,6 +208,7 @@ span.menu-text::after {
   line-height: 135%;
   letter-spacing: 0.58em;
   color: #3c91d6;
+  white-space: normal;
 }
 
 .inner-body-content {
@@ -263,5 +264,19 @@ span.menu-text::after {
   color: #fff;
   margin-left: 1rem;
   font-size: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    width: 100%;
+  }
+
+  .header-content {
+    padding: 2rem 2rem;
+  }
+
+  .body-content {
+    padding: 3rem 1rem;
+  }
 }
 </style>

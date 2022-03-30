@@ -34,7 +34,7 @@
 
 <style scoped>
 .latest-insights {
-  padding: 13rem 0;
+  /* padding: 3rem 0; */
 }
 
 .latest-insights h4 {
