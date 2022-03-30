@@ -47,8 +47,9 @@
         </el-col>
         <el-col class="hidden-lg-and-up" :span="24">
           <p class="description">
-            We believed a well-designed website is essential for building a
-            successful business image.
+            For many years, we have adopted cutting-edge technologies in
+            application development, from the traditional CGI, C, and Java to
+            the popular PHP, Python, and JS.
           </p>
           <base-button class="btn">VIEW OUR SERVICES</base-button>
         </el-col>
@@ -70,8 +71,8 @@
         </el-col>
         <el-col class="hidden-lg-and-up" :span="24">
           <p class="description">
-            We believed a well-designed website is essential for building a
-            successful business image.
+            Through digitization, a business can achieve increased brand value,
+            expand the client base, and best utilization of human resources.
           </p>
           <base-button class="btn">VIEW OUR SERVICES</base-button>
         </el-col>

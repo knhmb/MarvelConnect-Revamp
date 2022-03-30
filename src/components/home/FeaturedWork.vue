@@ -112,9 +112,9 @@
   bottom: 3rem;
 }
 
-/* .featured-work .images .science-parks {
+.featured-work .images .science-parks {
   margin-top: 18rem;
-} */
+}
 
 .featured-work .images .science-parks p {
   bottom: 3rem;
@@ -144,7 +144,7 @@
 }
 
 .featured-work .images .dentist-app-2 {
-  /* margin-top: 2rem; */
+  margin-top: 2rem;
 }
 
 .featured-work .images .dentist-app-2 p {
@@ -190,6 +190,10 @@
     right: 1.5rem;
   }
 
+  .featured-work .images .science-parks {
+    margin-top: 0;
+  }
+
   .featured-work .images .science-parks p {
     bottom: 3rem;
     right: 1.5rem;
@@ -216,10 +220,6 @@
     color: #111;
   }
 
-  .featured-work .images .dentist-app-2 {
-    /* margin-top: 2rem; */
-  }
-
   .featured-work .images .dentist-app-2 p {
     bottom: 3rem;
     right: 1.5rem;
@@ -231,6 +231,10 @@
     bottom: 1.3rem;
     right: 1.5rem;
     color: #111;
+  }
+
+  .featured-work .images .dentist-app-2 {
+    margin-top: 0;
   }
 }
 </style>

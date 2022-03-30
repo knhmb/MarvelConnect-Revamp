@@ -100,4 +100,14 @@
   color: #111111;
   margin: 1rem 0;
 }
+
+@media screen and (max-width: 900px) {
+  .latest-insights {
+    padding-top: -2rem;
+  }
+
+  .latest-insights .el-row .el-col:nth-of-type(2n) {
+    margin-top: 0;
+  }
+}
 </style>
