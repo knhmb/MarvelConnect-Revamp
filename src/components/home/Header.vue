@@ -197,7 +197,7 @@ span.menu-text::after {
 }
 
 .body-content {
-  padding: 3rem 20rem;
+  padding: 3rem 15rem;
 }
 
 .body-content p {

@@ -1,45 +1,47 @@
 <template>
-  <section class="featured-work">
-    <el-row>
-      <el-col>
-        <h2>Featured Work</h2>
-        <p>Explore some of our finest projects.</p>
-      </el-col>
-    </el-row>
-    <el-row :gutter="40" class="images">
-      <el-col :sm="24" :lg="12">
-        <img src="../../assets/BD.png" alt="" />
-        <p>Orienteering APP</p>
-        <p class="additional-info">Know more</p>
-      </el-col>
-      <el-col class="science-parks" :sm="24" :lg="12">
-        <img src="../../assets/image-16.png" alt="" />
-        <p>APP of Science P<span>arks</span></p>
-        <p class="additional-info">Know more</p>
-      </el-col>
-      <el-col class="dentist-app" :sm="24" :lg="12">
-        <img src="../../assets/DENTISTCLINIC.png" alt="" />
-        <p>Dentist Clinic APP</p>
-        <p class="additional-info">Know more</p>
-      </el-col>
-      <el-col class="dentist-app-2" :sm="24" :lg="12">
-        <img src="../../assets/image-8.png" alt="" />
-        <p>The Best Hotel Booking Sites</p>
-        <p class="additional-info">Know more</p>
-      </el-col>
-    </el-row>
-    <el-row>
-      <el-col class="btn-readmore">
-        <base-button>VIEW MORE WORK</base-button>
-      </el-col>
-    </el-row>
-  </section>
+  <base-container>
+    <section class="featured-work">
+      <el-row>
+        <el-col>
+          <h2>Featured Work</h2>
+          <p>Explore some of our finest projects.</p>
+        </el-col>
+      </el-row>
+      <el-row :gutter="40" class="images">
+        <el-col :sm="24" :lg="12">
+          <img src="../../assets/BD.png" alt="" />
+          <p>Orienteering APP</p>
+          <p class="additional-info">Know more</p>
+        </el-col>
+        <el-col class="science-parks" :sm="24" :lg="12">
+          <img src="../../assets/image-16.png" alt="" />
+          <p>APP of Science P<span>arks</span></p>
+          <p class="additional-info">Know more</p>
+        </el-col>
+        <el-col class="dentist-app" :sm="24" :lg="12">
+          <img src="../../assets/DENTISTCLINIC.png" alt="" />
+          <p>Dentist Clinic APP</p>
+          <p class="additional-info">Know more</p>
+        </el-col>
+        <el-col class="dentist-app-2" :sm="24" :lg="12">
+          <img src="../../assets/image-8.png" alt="" />
+          <p>The Best Hotel Booking Sites</p>
+          <p class="additional-info">Know more</p>
+        </el-col>
+      </el-row>
+      <el-row>
+        <el-col class="btn-readmore">
+          <base-button>VIEW MORE WORK</base-button>
+        </el-col>
+      </el-row>
+    </section>
+  </base-container>
 </template>
 
 
 <style scoped>
 .featured-work {
-  padding: 9rem 20rem;
+  padding: 6rem 0;
 }
 
 .featured-work h2 {

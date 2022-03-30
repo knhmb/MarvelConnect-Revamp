@@ -1,13 +1,15 @@
 <template>
   <div class="section-3">
-    <h4>A DIGITAL AGENCY</h4>
-    <p>
-      Marvelconnect is an innovative company and has 9 years of experience since
-      founded. We provide various innovative technology services, from
-      traditional mobile apps and websites to the latest AI, Machine Learning,
-      Big Data, and IoT. Marvelconnect has always been a trustworthy partner and
-      service provider to our clients around the globe.
-    </p>
+    <base-container>
+      <h4>A DIGITAL AGENCY</h4>
+      <p>
+        Marvelconnect is an innovative company and has 9 years of experience
+        since founded. We provide various innovative technology services, from
+        traditional mobile apps and websites to the latest AI, Machine Learning,
+        Big Data, and IoT. Marvelconnect has always been a trustworthy partner
+        and service provider to our clients around the globe.
+      </p>
+    </base-container>
   </div>
 </template>
 
@@ -16,8 +18,8 @@
   background-image: url("../../assets/Rectangle-60.png");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 4rem 0;
   /* height: 100vh; */
-  padding: 9rem 5rem 9rem 20rem;
 }
 
 .section-3 h4 {
@@ -38,6 +40,7 @@
   line-height: 200%;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-left: 3rem;
 }
 </style>
