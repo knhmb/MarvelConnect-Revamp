@@ -120,4 +120,16 @@
     margin-top: -3.5rem;
   }
 }
+
+@media screen and (max-width: 1069px) {
+  .project-lists .el-row .el-col:nth-of-type(2) p.project-name {
+    margin-top: -6rem;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .project-lists .el-row .el-col p.project-name {
+    font-size: 28px;
+  }
+}
 </style>
