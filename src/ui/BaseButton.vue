@@ -46,7 +46,7 @@ export default {
   color: #111;
   /* margin-left: 1rem; */
   font-size: 10px;
-  background: #fff;
+  /* background: #fff; */
   width: 45px;
   height: 45px;
   border-radius: 50%;
