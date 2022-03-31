@@ -4,9 +4,7 @@
     <div class="header-content">
       <el-row class="row-head">
         <el-col :span="12">
-          <!-- <transition appear @before-enter="beforeEnter" @enter="enter"> -->
           <img class="logo" src="../../assets/brand-logo.png" alt="" />
-          <!-- </transition> -->
         </el-col>
         <el-col class="last-col-head" :span="12">
           <span class="menu-text hidden-sm-and-down">Let's Talk</span>

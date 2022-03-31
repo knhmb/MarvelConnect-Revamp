@@ -1,13 +1,14 @@
 <template>
-  <Home />
+  <router-view></router-view>
+  <the-footer></the-footer>
 </template>
 
 <script>
-import Home from "./pages/Home";
+import TheFooter from "./components/common/TheFooter.vue";
 
 export default {
   components: {
-    Home,
+    TheFooter,
   },
 };
 </script>
@@ -21,5 +22,6 @@ export default {
 
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 </style>
