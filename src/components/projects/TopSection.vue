@@ -17,6 +17,9 @@
 </template>
 
 <style scoped>
+.projects .top-section {
+  padding: 3rem 0;
+}
 .projects .top-section p.case-study {
   font-family: "Abel";
   font-style: normal;

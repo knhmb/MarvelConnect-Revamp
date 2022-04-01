@@ -1,6 +1,6 @@
 <template>
-  <the-header></the-header>
   <section class="projects">
+    <the-header></the-header>
     <top-section></top-section>
     <Main />
   </section>
@@ -8,7 +8,7 @@
 
 <style scoped>
 .projects {
-  padding: 3rem 0;
+  /* padding: 3rem 0; */
   background: #e6e6e6;
 }
 </style>
