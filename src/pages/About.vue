@@ -4,6 +4,7 @@
     <top-section></top-section>
     <Agency />
     <our-mission></our-mission>
+    <work-process></work-process>
   </section>
 </template>
 
@@ -12,6 +13,7 @@ import TheHeader from "../components/common/TheHeader.vue";
 import TopSection from "../components/about/TopSection.vue";
 import Agency from "../components/about/Agency.vue";
 import OurMission from "../components/about/OurMission.vue";
+import WorkProcess from "../components/about/WorkProcess.vue";
 
 export default {
   components: {
@@ -19,6 +21,7 @@ export default {
     TopSection,
     Agency,
     OurMission,
+    WorkProcess,
   },
 };
 </script>
