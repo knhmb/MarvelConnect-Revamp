@@ -20,7 +20,7 @@
 
 <style scoped>
 .media .recent-work {
-  padding: 3rem 0;
+  padding: 3rem 0 9rem 0;
   background: #f3f3f3;
 }
 
