@@ -1,7 +1,7 @@
 <template>
   <div class="btn-content">
     <div class="btn"></div>
-    <span><slot></slot></span>
+    <span :class="mode"><slot></slot></span>
     <el-icon><plus /></el-icon>
   </div>
 </template>
@@ -10,15 +10,18 @@
 import { Plus } from "@element-plus/icons-vue";
 
 export default {
-  // props: {
-  //   mode: {
-  //     type: String,
-  //     required: false,
-  //     default: null,
-  //   },
-  // },
+  props: {
+    mode: {
+      type: String,
+      required: false,
+      default: null,
+    },
+  },
   components: {
     plus: Plus,
+  },
+  created() {
+    console.log(this.mode);
   },
 };
 </script>
@@ -59,8 +62,9 @@ export default {
   border-radius: 50%;
 }
 
-.btn-content .black {
-  /* color: #111; */
+.btn-content .bold {
+  font-weight: 700;
+  font-family: Montserrat;
 }
 
 @media screen and (max-width: 900px) {

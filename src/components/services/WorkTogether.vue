@@ -1,7 +1,8 @@
 <template>
   <section class="work-together">
     <base-container>
-      <img src="../../assets/Subtract.png" alt="" />
+      <img class="circular" src="../../assets/Subtract.png" alt="" />
+      <img class="dotted" src="../../assets/Group-79.png" alt="" />
       <p>WORK TOGETHER</p>
       <h4>
         YOU HAVE A VISION, <br />
@@ -27,13 +28,20 @@
   overflow: hidden;
 }
 
-.work-together img {
+.work-together img.circular {
   position: absolute;
   height: 100%;
   /* width: 100%; */
   /* object-fit: contain; */
   right: 6rem;
   bottom: 2rem;
+}
+
+.work-together .dotted {
+  position: absolute;
+  width: 10%;
+  right: 10rem;
+  top: 30%;
 }
 
 .work-together p {
