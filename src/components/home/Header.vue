@@ -109,7 +109,7 @@ header {
   background-image: url("../../assets/Group-72.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 100vh; */
+  min-height: 100vh;
 }
 
 .header-content {
@@ -136,8 +136,8 @@ span.menu-text {
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   letter-spacing: 0.15em;
   color: #fff;
   position: relative;
@@ -207,7 +207,7 @@ span.menu-text::after {
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 135%;
   letter-spacing: 0.58em;
   color: #3c91d6;
@@ -223,17 +223,18 @@ span.menu-text::after {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
+  font-size: 4.5rem;
   line-height: 88px;
   letter-spacing: -0.02em;
   color: #ffffff;
+  word-break: break-word;
 }
 
 .inner-body-content p {
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 70px;
   letter-spacing: 0.018em;
   color: #ffffff;

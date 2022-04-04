@@ -10,6 +10,13 @@
 import { Plus } from "@element-plus/icons-vue";
 
 export default {
+  // props: {
+  //   mode: {
+  //     type: String,
+  //     required: false,
+  //     default: null,
+  //   },
+  // },
   components: {
     plus: Plus,
   },
@@ -50,6 +57,10 @@ export default {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+}
+
+.btn-content .black {
+  /* color: #111; */
 }
 
 @media screen and (max-width: 900px) {

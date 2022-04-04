@@ -55,6 +55,7 @@
   line-height: 90px;
   letter-spacing: -0.005em;
   color: #111111;
+  word-break: break-word;
 }
 
 .services .services-top-section .el-row .el-col:nth-of-type(3) {

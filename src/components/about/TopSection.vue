@@ -48,6 +48,7 @@
   line-height: 90px;
   letter-spacing: -0.005em;
   color: #111111;
+  word-break: break-word;
 }
 
 .about .about-top-section .el-row .el-col:nth-of-type(3) {
@@ -79,5 +80,11 @@
   height: 100%;
   object-fit: contain;
   /* padding-left: 2rem; */
+}
+
+@media screen and (max-width: 470px) {
+  .about .about-top-section .el-row .el-col h4 {
+    font-size: 50px;
+  }
 }
 </style>

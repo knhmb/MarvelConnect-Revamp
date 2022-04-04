@@ -6,7 +6,7 @@
 
 <style scoped>
 .content-container {
-  padding: 0 13rem;
+  padding: 0 6rem;
 }
 
 @media screen and (max-width: 900px) {

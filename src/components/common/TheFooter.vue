@@ -25,11 +25,11 @@
             <p>EXPLORE</p>
             <ul>
               <li>Work</li>
-              <li>Services</li>
-              <li>About</li>
+              <li @click="$router.push('/services')">Services</li>
+              <li @click="$router.push('/about-us')">About</li>
               <li>Careers</li>
               <li>Insights</li>
-              <li>Contact</li>
+              <li @click="$router.push('/contact')">Contact</li>
             </ul>
             <p class="location">
               Unit 1701, 17/F, Enterprise Square Three,39 Wang Chiu Road,

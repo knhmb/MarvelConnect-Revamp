@@ -3,7 +3,12 @@
     <div class="header-content">
       <el-row class="row-head">
         <el-col :span="12">
-          <img class="logo" src="../../assets/brand-logo-1.png" alt="" />
+          <img
+            @click="$router.push('/')"
+            class="logo"
+            src="../../assets/brand-logo-1.png"
+            alt=""
+          />
         </el-col>
         <el-col class="last-col-head" :span="12">
           <span class="menu-text hidden-sm-and-down">Let's Talk</span>

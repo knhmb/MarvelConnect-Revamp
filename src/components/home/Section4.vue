@@ -179,7 +179,8 @@ export default {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 180px;
+  /* font-size: 180px; */
+  font-size: 9.688rem;
   line-height: 140%;
   letter-spacing: -0.0005em;
   color: #f6f6f6;
