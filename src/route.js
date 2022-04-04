@@ -6,6 +6,7 @@ import Services from "./pages/Services.vue";
 import About from "./pages/About.vue";
 import Contact from "./pages/Contact.vue";
 import Media from "./pages/Media.vue";
+import WebApp from "./pages/WebApp.vue";
 
 const router = createRouter({
   scrollBehavior(_, _2, savedPosition) {
@@ -23,6 +24,7 @@ const router = createRouter({
     { path: "/about-us", component: About },
     { path: "/contact", component: Contact },
     { path: "/media", component: Media },
+    { path: "/web-n-app", component: WebApp },
   ],
 });
 
