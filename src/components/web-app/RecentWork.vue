@@ -19,12 +19,12 @@
 </template>
 
 <style scoped>
-.web-app .recent-work {
+.recent-work {
   padding: 3rem 0 9rem 0;
   background: #f3f3f3;
 }
 
-.web-app .recent-work h4 {
+.recent-work h4 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -34,20 +34,18 @@
   color: #111111;
   margin-bottom: 5rem;
 }
-
-.web-app .recent-work .el-col {
+.recent-work .el-col {
   position: relative;
 }
-
-.web-app .recent-work .el-col:first-of-type {
+.recent-work .el-col:first-of-type {
   margin-top: 21rem;
 }
 
-.web-app .recent-work img {
+.recent-work img {
   width: 100%;
 }
 
-.web-app .recent-work p:first-of-type {
+.recent-work p:first-of-type {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -64,8 +62,7 @@
   bottom: 3rem;
   right: -4rem; */
 }
-
-.web-app .recent-work p:nth-of-type(2) {
+.recent-work p:nth-of-type(2) {
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
@@ -78,88 +75,93 @@
   margin-top: -3rem;
   /* margin-left: 8rem; */
 }
-
-.web-app .recent-work .el-col:nth-of-type(2) p:first-of-type {
+.recent-work .el-col:nth-of-type(2) p:first-of-type {
   /* margin-right: 2.5rem; */
   position: absolute;
   right: -4rem;
   color: #fff;
 }
-
-.web-app .recent-work .el-col:nth-of-type(2) p:first-of-type span {
+.recent-work .el-col:nth-of-type(2) p:first-of-type span {
   color: #111;
 }
-
-.web-app .recent-work .el-col:nth-of-type(2) p:nth-of-type(2) {
+.recent-work .el-col:nth-of-type(2) p:nth-of-type(2) {
   /* margin-right: 2rem; */
   position: absolute;
   right: -4.3rem;
 }
 
+@media screen and (max-width: 1280px) {
+  .recent-work p:first-of-type {
+    font-size: 32px;
+    margin-top: -5.5rem;
+    right: -0.5rem;
+  }
+}
+
 @media screen and (max-width: 1199px) {
-  .web-app .recent-work .el-col:nth-of-type(2) {
+  .recent-work .el-col:nth-of-type(2) {
     margin-top: 5rem;
   }
 
-  .web-app .recent-work .el-col:first-of-type {
+  .recent-work .el-col:first-of-type {
     margin-top: 0;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .web-app .recent-work .el-col:nth-of-type(2) p:first-of-type {
+  .recent-work .el-col:nth-of-type(2) p:first-of-type {
     right: 1rem;
   }
 
-  .web-app .recent-work .el-col:nth-of-type(2) p:first-of-type span {
+  .recent-work .el-col:nth-of-type(2) p:first-of-type span {
     color: #fff;
   }
 
-  .web-app .recent-work .el-col:nth-of-type(2) p:nth-of-type(2) {
+  .recent-work .el-col:nth-of-type(2) p:nth-of-type(2) {
     right: 1rem;
     color: #fff;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .web-app .recent-work p:first-of-type {
+  .recent-work p:first-of-type {
     font-size: 28px;
     margin-top: -4.5rem;
   }
 
-  .web-app .recent-work .el-col:nth-of-type(2) p:first-of-type {
+  .recent-work .el-col:nth-of-type(2) p:first-of-type {
     font-size: 28px;
     margin-top: -3rem;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .web-app .recent-work p:first-of-type {
+  .recent-work p:first-of-type {
     font-size: 24px;
   }
 
-  .web-app .recent-work p:nth-of-type(2) {
+  .recent-work p:nth-of-type(2) {
     margin-top: -2.5rem;
   }
 
-  .web-app .recent-work .el-col:nth-of-type(2) p:first-of-type {
+  .recent-work .el-col:nth-of-type(2) p:first-of-type {
     margin-top: -4.5rem;
   }
 
-  .web-app .recent-work .el-col:nth-of-type(2) p:nth-of-type(2) {
+  .recent-work .el-col:nth-of-type(2) p:nth-of-type(2) {
     margin-top: -2.5rem;
   }
 }
 
 @media screen and (max-width: 390px) {
-  .web-app .recent-work p:first-of-type,
-  .web-app .recent-work .el-col:nth-of-type(2) p:first-of-type {
+  .recent-work p:first-of-type,
+  .recent-work .el-col:nth-of-type(2) p:first-of-type {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 360px) {
-  .web-app .recent-work p:first-of-type,
-  .web-app .recent-work .el-col:nth-of-type(2) p:first-of-type {
+  .recent-work p:first-of-type,
+  .recent-work .el-col:nth-of-type(2) p:first-of-type {
     font-size: 20px;
   }
 }
