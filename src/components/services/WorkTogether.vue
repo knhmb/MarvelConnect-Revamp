@@ -17,6 +17,16 @@
   </section>
 </template>
 
+<script>
+import { Plus } from "@element-plus/icons-vue";
+
+export default {
+  components: {
+    plus: Plus,
+  },
+};
+</script>
+
 <style scoped>
 .work-together {
   padding: 5rem 0;
@@ -97,5 +107,6 @@
   color: #fff;
   margin-left: 1rem;
   font-size: 10px;
+  margin-top: 0.6rem;
 }
 </style>
