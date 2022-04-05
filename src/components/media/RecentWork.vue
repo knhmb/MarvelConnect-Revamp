@@ -19,12 +19,12 @@
 </template>
 
 <style scoped>
-.media .recent-work {
+.recent-work {
   padding: 3rem 0 9rem 0;
   background: #f3f3f3;
 }
 
-.media .recent-work h4 {
+.recent-work h4 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -35,15 +35,15 @@
   margin-bottom: 5rem;
 }
 
-.media .recent-work .el-col {
+.recent-work .el-col {
   position: relative;
 }
 
-.media .recent-work img {
+.recent-work img {
   width: 85%;
 }
 
-.media .recent-work p:first-of-type {
+.recent-work p:first-of-type {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -59,7 +59,7 @@
   right: -4rem; */
 }
 
-.media .recent-work p:nth-of-type(2) {
+.recent-work p:nth-of-type(2) {
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
@@ -70,31 +70,31 @@
   /* margin-left: 8rem; */
 }
 
-.media .recent-work .el-col:nth-of-type(2) {
+.recent-work .el-col:nth-of-type(2) {
   margin-top: 21rem;
 }
 
-.media .recent-work .el-col:nth-of-type(2) p:first-of-type {
+.recent-work .el-col:nth-of-type(2) p:first-of-type {
   margin-right: 2.5rem;
 }
 
-.media .recent-work .el-col:nth-of-type(2) p:nth-of-type(2) {
+.recent-work .el-col:nth-of-type(2) p:nth-of-type(2) {
   margin-right: 2rem;
 }
 
 @media screen and (max-width: 1199px) {
-  .media .recent-work .el-col:nth-of-type(2) {
+  .recent-work .el-col:nth-of-type(2) {
     margin-top: 5rem;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .media .recent-work p:first-of-type {
+  .recent-work p:first-of-type {
     font-size: 28px;
     margin-top: -4.5rem;
   }
 
-  .media .recent-work .el-col:nth-of-type(2) p:first-of-type {
+  .recent-work .el-col:nth-of-type(2) p:first-of-type {
     font-size: 28px;
     margin-top: -3rem;
   }
