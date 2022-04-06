@@ -82,8 +82,8 @@
 
 .featured-work .images .el-col {
   position: relative;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   margin-bottom: 2rem;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .featured-work .images .science-parks {
-  margin-top: 18rem;
+  margin-top: 8rem;
 }
 
 .featured-work .images .science-parks p {
@@ -188,8 +188,14 @@
     margin-top: 0;
   }
 
-  .featured-work .el-row {
-    justify-content: center;
+  .featured-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-work .img-container {
+    width: 100%;
   }
 }
 
