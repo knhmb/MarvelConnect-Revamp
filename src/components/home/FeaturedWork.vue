@@ -8,25 +8,34 @@
       </el-col>
     </el-row>
     <el-row :gutter="40" class="images">
-      <el-col :sm="24" :lg="12">
-        <img src="../../assets/BD.png" alt="" />
-        <p>Orienteering APP</p>
-        <p class="additional-info">Know more</p>
+      <el-col :sm="24" :md="10">
+        <div class="img-container">
+          <img src="../../assets/BD.png" alt="" />
+
+          <p>Orienteering APP</p>
+          <p class="additional-info">Know more</p>
+        </div>
       </el-col>
-      <el-col class="science-parks" :sm="24" :lg="12">
-        <img src="../../assets/image-16.png" alt="" />
-        <p>APP of Science P<span>arks</span></p>
-        <p class="additional-info">Know more</p>
+      <el-col class="science-parks" :sm="24" :md="14">
+        <div class="img-container">
+          <img src="../../assets/image-16.png" alt="" />
+          <p>APP of Science P<span>arks</span></p>
+          <p class="additional-info">Know more</p>
+        </div>
       </el-col>
-      <el-col class="dentist-app" :sm="24" :lg="12">
-        <img src="../../assets/DENTISTCLINIC.png" alt="" />
-        <p>Dentist Clinic APP</p>
-        <p class="additional-info">Know more</p>
+      <el-col class="dentist-app" :sm="24" :md="12">
+        <div class="img-container">
+          <img src="../../assets/DENTISTCLINIC.png" alt="" />
+          <p>Dentist Clinic APP</p>
+          <p class="additional-info">Know more</p>
+        </div>
       </el-col>
-      <el-col class="dentist-app-2" :sm="24" :lg="12">
-        <img src="../../assets/image-8.png" alt="" />
-        <p>The Best Hotel Booking Sites</p>
-        <p class="additional-info">Know more</p>
+      <el-col class="dentist-app-2" :sm="24" :md="12">
+        <div class="img-container">
+          <img src="../../assets/image-8.png" alt="" />
+          <p>The Best Hotel Booking Sites</p>
+          <p class="additional-info">Know more</p>
+        </div>
       </el-col>
     </el-row>
     <el-row>
@@ -78,13 +87,20 @@
   margin-bottom: 2rem;
 }
 
+.featured-work .img-container {
+  position: relative;
+  width: 80%;
+}
+
 .featured-work .images img {
   width: 100%;
+  /* height: 60%; */
+  /* object-fit: contain; */
   /* width: 304px; */
   /* height: 100%;
   width: 100%;
   object-fit: contain; */
-  position: relative;
+
   /* margin-top: 1.5rem; */
 }
 
@@ -95,7 +111,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 1.4rem;
   line-height: 2.875rem;
   text-align: right;
   letter-spacing: -0.014em;
@@ -119,7 +135,7 @@
 
 .featured-work .images .science-parks p {
   bottom: 3rem;
-  right: -2rem;
+  right: -3rem;
   color: #fff;
 }
 
@@ -129,7 +145,7 @@
 
 .featured-work .images .science-parks p.additional-info {
   bottom: 1rem;
-  right: -4.1rem;
+  right: -5rem;
   color: #111;
 }
 
@@ -167,6 +183,16 @@
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 991px) {
+  .featured-work .images .science-parks {
+    margin-top: 0;
+  }
+
+  .featured-work .el-row {
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .featured-work {
     /* padding: 6rem 0rem; */
@@ -197,7 +223,7 @@
 
   .featured-work .images .science-parks p {
     bottom: 3rem;
-    right: 1.5rem;
+    right: 4.5rem;
     color: #fff;
   }
 
@@ -206,7 +232,7 @@
   }
 
   .featured-work .images .science-parks p.additional-info {
-    right: 1.5rem;
+    right: 4.5rem;
     color: #fff;
   }
 

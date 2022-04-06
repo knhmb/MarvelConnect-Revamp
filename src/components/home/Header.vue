@@ -151,7 +151,7 @@ span.menu-text::after {
   content: "";
   position: absolute;
   /* width: 110px; */
-  width: 105%;
+  width: 110%;
   /* width: 6.875rem; */
   height: 0.063rem;
   /* height: 1px; */
@@ -317,6 +317,7 @@ span.menu-text::after {
 
   span.menu-text::after {
     top: 3rem;
+    width: 105%;
   }
 
   .nav {
