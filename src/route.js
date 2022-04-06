@@ -11,6 +11,7 @@ import DigitalMarketing from "./pages/DigitalMarketing.vue";
 import Writing from "./pages/Writing.vue";
 import AI from "./pages/AI.vue";
 import IOT from "./pages/IOT.vue";
+import ProjectDetail1 from "./pages/ProjectDetail1.vue";
 
 const router = createRouter({
   scrollBehavior(_, _2, savedPosition) {
@@ -33,6 +34,7 @@ const router = createRouter({
     { path: "/writing", component: Writing },
     { path: "/artificial-intelligence", component: AI },
     { path: "/internet-of-things", component: IOT },
+    { path: "/project-detail-1", component: ProjectDetail1 },
   ],
 });
 
