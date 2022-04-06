@@ -34,6 +34,13 @@
       </el-row>
     </base-container>
   </section>
+  <section class="challenge-img">
+    <el-row>
+      <el-col>
+        <img src="../../assets/image-9.png" alt="" />
+      </el-col>
+    </el-row>
+  </section>
 </template>
 
 <style scoped>
@@ -73,5 +80,11 @@
 .challenge img.social-distancing-img {
   width: 80%;
   margin-bottom: 4rem;
+}
+
+.challenge-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

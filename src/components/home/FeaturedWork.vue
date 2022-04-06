@@ -49,8 +49,9 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
+  font-size: 3.375rem;
+  /* font-size: 54px; */
+  line-height: 4.125rem;
   letter-spacing: -0.005em;
   color: #111111;
 }
@@ -59,8 +60,8 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
   letter-spacing: 0.018em;
   color: #111111;
   margin-top: 0.5rem;
@@ -94,8 +95,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 46px;
+  font-size: 1.75rem;
+  line-height: 2.875rem;
   text-align: right;
   letter-spacing: -0.014em;
   color: #111111;
@@ -105,8 +106,8 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 36px;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
   text-align: right;
   color: #111111;
   bottom: 3rem;
@@ -168,7 +169,7 @@
 
 @media screen and (max-width: 900px) {
   .featured-work {
-    padding: 6rem 0rem;
+    /* padding: 6rem 0rem; */
     text-align: center;
   }
 
@@ -179,8 +180,8 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
-    line-height: 46px;
+    /* font-size: 28px;
+    line-height: 46px; */
     text-align: right;
     letter-spacing: -0.014em;
     color: #111111;

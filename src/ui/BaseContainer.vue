@@ -9,9 +9,9 @@
   padding: 0 10rem;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .content-container {
     padding: 0 2rem;
   }
-}
+} */
 </style>

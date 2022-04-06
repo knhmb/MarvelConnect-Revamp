@@ -20,6 +20,10 @@ export default {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 1.2vw;
+}
+
 body {
   width: 100vw;
   overflow-x: hidden;

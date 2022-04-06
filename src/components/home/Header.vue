@@ -12,7 +12,7 @@
           />
         </el-col>
         <el-col class="last-col-head" :span="12">
-          <span class="menu-text hidden-sm-and-down">Let's Talk</span>
+          <span class="menu-text">Let's Talk</span>
           <div class="nav">
             <div class="one"></div>
             <div class="two"></div>
@@ -113,7 +113,8 @@ header {
 }
 
 .header-content {
-  padding: 48px 64px;
+  /* padding: 48px 64px; */
+  padding: 3rem 4rem;
 }
 
 .el-row.row-head {
@@ -128,7 +129,8 @@ header {
 
 .logo {
   color: white;
-  width: 216px;
+  width: 13.5rem;
+  /* width: 216px; */
   cursor: pointer;
 }
 
@@ -148,18 +150,24 @@ span.menu-text {
 span.menu-text::after {
   content: "";
   position: absolute;
-  width: 110px;
-  height: 1px;
+  /* width: 110px; */
+  width: 105%;
+  /* width: 6.875rem; */
+  height: 0.063rem;
+  /* height: 1px; */
   left: 0;
-  top: 25px;
+  top: 1.563rem;
+  /* top: 25px; */
   background: #fff;
 }
 
 .nav div {
-  height: 2px;
+  height: 0.125rem;
+  /* height: 2px; */
   background: black;
-  margin: 5px 0;
-  border-radius: 24px;
+  margin: 0.313rem 0;
+  /* margin: 5px 0; */
+  border-radius: 1.5rem;
   position: absolute;
   transition: 0.2s ease-out;
 }
@@ -167,9 +175,11 @@ span.menu-text::after {
 .nav {
   display: block;
   margin-left: 2rem;
-  width: 45px;
+  width: 2.813rem;
+  /* width: 45px; */
   background: #fff;
-  height: 45px;
+  height: 2.813rem;
+  /* height: 45px; */
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -181,18 +191,23 @@ span.menu-text::after {
 
 .one {
   width: 50%;
-  right: 12px;
-  transform: translateY(-8px);
+  right: 0.75rem;
+  /* right: 12px; */
+  transform: translateY(-0.5rem);
+  /* transform: translateY(-8px); */
 }
 
 .two {
   width: 30%;
-  right: 12px;
+  right: 0.75rem;
+  /* right: 12px; */
 }
 .three {
   width: 50%;
-  right: 12px;
-  transform: translateY(8px);
+  right: 0.75rem;
+  /* right: 12px; */
+  transform: translateY(0.5rem);
+  /* transform: translateY(8px); */
 }
 
 .nav:hover div.two {
@@ -224,7 +239,8 @@ span.menu-text::after {
   font-style: normal;
   font-weight: 700;
   font-size: 4.5rem;
-  line-height: 88px;
+  line-height: 5.5rem;
+  /* line-height: 88px; */
   letter-spacing: -0.02em;
   color: #ffffff;
   word-break: break-word;
@@ -235,7 +251,8 @@ span.menu-text::after {
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 70px;
+  line-height: 4.375rem;
+  /* line-height: 70px; */
   letter-spacing: 0.018em;
   color: #ffffff;
 }
@@ -247,20 +264,25 @@ span.menu-text::after {
   width: fit-content;
 }
 .inner-body-content .btn-content .btn {
-  width: 45px;
-  height: 45px;
+  width: 2.813rem;
+  height: 2.813rem;
+  /* width: 45px;
+  height: 45px; */
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.15);
   display: inline-block;
 }
 
 .inner-body-content .btn-content span {
-  margin-left: -33px;
+  margin-left: -2.063rem;
+  /* margin-left: -33px; */
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1rem;
+  /* font-size: 12px; */
+  line-height: 1rem;
+  /* line-height: 16px; */
   letter-spacing: 0.24em;
   color: #ffffff;
 }
@@ -268,7 +290,9 @@ span.menu-text::after {
 .inner-body-content .btn-content .el-icon {
   color: #fff;
   margin-left: 1rem;
-  font-size: 10px;
+  font-size: 0.7rem;
+
+  /* font-size: 10px; */
 }
 
 @media screen and (max-width: 900px) {
@@ -276,12 +300,103 @@ span.menu-text::after {
     width: 100%;
   }
 
-  .header-content {
+  /* .header-content {
     padding: 2rem 2rem;
   }
 
   .body-content {
     padding: 3rem 1rem;
+  } */
+}
+
+@media screen and (max-width: 800px) {
+  span.menu-text {
+    font-size: 3rem;
+    line-height: 1.125rem;
+  }
+
+  span.menu-text::after {
+    top: 3rem;
+  }
+
+  .nav {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .nav div {
+    height: 0.225rem;
+    margin: 0.313rem 0;
+    border-radius: 1.5rem;
+    position: absolute;
+    transition: 0.2s ease-out;
+  }
+
+  .one {
+    width: 50%;
+    right: 1rem;
+    /* right: 12px; */
+    transform: translateY(-1rem);
+    /* transform: translateY(-8px); */
+  }
+
+  .two {
+    width: 30%;
+    right: 1rem;
+    transform: translateY(-0.3rem);
+    /* right: 12px; */
+  }
+
+  .three {
+    width: 50%;
+    right: 1rem;
+    /* right: 12px; */
+    transform: translateY(0.5rem);
+    /* transform: translateY(8px); */
+  }
+
+  .body-content p {
+    font-size: 3rem;
+  }
+
+  .inner-body-content h2 {
+    font-size: 11rem;
+    line-height: 13rem;
+  }
+
+  .inner-body-content p {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+
+  .inner-body-content .btn-content .btn {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .inner-body-content .btn-content span {
+    font-size: 2rem;
+    /* font-size: 12px; */
+  }
+
+  .inner-body-content .btn-content .el-icon {
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+
+    /* font-size: 10px; */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    min-height: 100vh;
   }
 }
 </style>

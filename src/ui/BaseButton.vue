@@ -34,20 +34,20 @@ export default {
   width: fit-content;
 }
 .btn-content .btn {
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.05);
   display: inline-block;
 }
 
 .btn-content span {
-  margin-left: -33px;
+  margin-left: -2.0625rem;
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1rem;
+  line-height: 1rem;
   letter-spacing: 0.24em;
   color: #111;
 }
@@ -55,10 +55,12 @@ export default {
 .btn-content .el-icon {
   color: #111;
   /* margin-left: 1rem; */
-  font-size: 10px;
+  font-size: 0.7rem;
+  width: 2rem;
+  height: 2rem;
+  /* font-size: 0.625rem; */
   /* background: #fff; */
-  width: 45px;
-  height: 45px;
+
   border-radius: 50%;
 }
 
@@ -67,9 +69,9 @@ export default {
   font-family: Montserrat;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .btn-content span {
     font-size: 9px;
   }
-}
+} */
 </style>
