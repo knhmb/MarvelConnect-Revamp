@@ -252,6 +252,23 @@ export default {
     font-size: 50px;
   }
 }
+
+@media screen and (min-width: 901px) and (max-width: 1069px) {
+  .section-4 p.watermark {
+    font-size: 5.5rem;
+  }
+
+  .section-4 p.description {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .section-4 p.description {
+    margin-top: 7rem;
+  }
+}
+
 @media screen and (min-width: 1820px) {
   .section-4 .el-row:not(:last-of-type) {
     /* margin-bottom: 22rem; */

@@ -244,6 +244,7 @@ span.menu-text::after {
   display: flex;
   align-items: center;
   cursor: pointer;
+  width: fit-content;
 }
 .inner-body-content .btn-content .btn {
   width: 45px;
