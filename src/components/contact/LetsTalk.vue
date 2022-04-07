@@ -42,7 +42,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 31px;
+  font-size: 1.9375rem;
   line-height: 120%;
   color: #111111;
   margin-bottom: 0.5rem;
@@ -53,7 +53,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 120%;
   letter-spacing: 0.018em;
   color: #808080;
@@ -70,7 +70,7 @@
   content: "";
   position: absolute;
   width: 110%;
-  height: 2px;
+  height: 0.125rem;
   background: #3c91d6;
   bottom: -0.5rem;
   left: 0;
@@ -78,6 +78,17 @@
 
 .lets-talk .el-col a.email::after {
   width: 90%;
+}
+
+@media screen and (max-width: 700px) {
+  .lets-talk .el-col p:first-of-type {
+    font-size: 4rem;
+  }
+
+  .lets-talk .el-col p:nth-of-type(2),
+  .lets-talk .el-col a {
+    font-size: 2rem;
+  }
 }
 
 /* .lets-talk .el-col a:hover::after {
