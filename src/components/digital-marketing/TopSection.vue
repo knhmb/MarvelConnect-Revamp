@@ -239,25 +239,25 @@ export default {
   .digital-marketing .digital-marketing-top-section .el-col:nth-of-type(2) {
     padding-left: 2rem;
   }
-  @media screen and (max-width: 780px) {
-    .digital-marketing .digital-marketing-top-section p {
-      font-size: 3rem;
-    }
-
-    .digital-marketing .digital-marketing-top-section h4 {
-      font-size: 7rem;
-      /* line-height: 8rem; */
-    }
+}
+@media screen and (max-width: 780px) {
+  .digital-marketing .digital-marketing-top-section p {
+    font-size: 3rem;
   }
-  @media screen and (max-width: 600px) {
-    .digital-marketing .digital-marketing-top-section p {
-      font-size: 5rem;
-    }
 
-    .digital-marketing .digital-marketing-top-section h4 {
-      font-size: 13rem;
-      line-height: 12rem;
-    }
+  .digital-marketing .digital-marketing-top-section h4 {
+    font-size: 7rem;
+    /* line-height: 8rem; */
+  }
+}
+@media screen and (max-width: 600px) {
+  .digital-marketing .digital-marketing-top-section p {
+    font-size: 5rem;
+  }
+
+  .digital-marketing .digital-marketing-top-section h4 {
+    font-size: 13rem;
+    line-height: 12rem;
   }
 }
 </style>
