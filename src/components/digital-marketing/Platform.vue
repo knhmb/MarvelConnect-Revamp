@@ -57,7 +57,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 210%;
   color: #6f6f6f;
   margin-bottom: 0.5rem;
@@ -72,5 +72,11 @@
   background: #e6e6e6;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .platform ul li {
+    font-size: 2.5rem;
+  }
 }
 </style>

@@ -34,10 +34,34 @@
   </section>
 </template>
 
+<script>
+import { gsap } from "gsap";
+
+export default {
+  mounted() {
+    gsap.fromTo(
+      ".digital-marketing-top-section",
+      {
+        x: -900,
+        opacity: 0,
+      },
+      {
+        duration: 2,
+        opacity: 1,
+        delay: 2,
+        x: 0,
+        ease: "circ.out",
+      }
+    );
+  },
+};
+</script>
+
 <style scoped>
 .digital-marketing .digital-marketing-top-section {
   padding: 3rem 0;
   position: relative;
+  min-height: 100vh;
   /* overflow: hidden; */
 }
 
@@ -63,8 +87,8 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
   letter-spacing: 0.6em;
   color: #111111;
   position: absolute;
@@ -77,8 +101,8 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
   letter-spacing: 0.6em;
   color: #111111;
   position: absolute;
@@ -93,7 +117,7 @@
   content: "";
   background: #111;
   width: 30%;
-  height: 2px;
+  height: 0.125rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -104,7 +128,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 135%;
   letter-spacing: 0.58em;
   color: #00559a;
@@ -115,8 +139,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 70px;
-  line-height: 90px;
+  font-size: 4.375rem;
+  line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
   margin-left: 1rem;
@@ -143,7 +167,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 140%;
   letter-spacing: -0.005em;
   color: #111111;
@@ -156,11 +180,22 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 160%;
   letter-spacing: -0.005em;
   color: #676565;
 }
+
+/* @media screen and (max-width: 991px) {
+  .digital-marketing .digital-marketing-top-section p.p2,
+  .digital-marketing .digital-marketing-top-section p.p1 {
+    display: none;
+  }
+
+  .digital-marketing .digital-marketing-top-section h4 {
+    word-break: break-word;
+  }
+} */
 
 @media screen and (max-width: 991px) {
   .digital-marketing .digital-marketing-top-section p.p2,
@@ -171,12 +206,58 @@
   .digital-marketing .digital-marketing-top-section h4 {
     word-break: break-word;
   }
+
+  .media .media-top-section p.p2,
+  .media .media-top-section p.p1 {
+    display: none;
+  }
+  .digital-marketing .digital-marketing-top-section p {
+    font-size: 2rem;
+  }
+
+  .digital-marketing .digital-marketing-top-section h4 {
+    font-size: 5.5rem;
+  }
+
+  .digital-marketing
+    .digital-marketing-top-section
+    .el-col:nth-of-type(3)
+    p:first-of-type {
+    font-size: 3rem;
+  }
+
+  .digital-marketing
+    .digital-marketing-top-section
+    .el-col:nth-of-type(3)
+    p:nth-of-type(2) {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .digital-marketing .digital-marketing-top-section .el-col:first-of-type,
   .digital-marketing .digital-marketing-top-section .el-col:nth-of-type(2) {
     padding-left: 2rem;
+  }
+  @media screen and (max-width: 780px) {
+    .digital-marketing .digital-marketing-top-section p {
+      font-size: 3rem;
+    }
+
+    .digital-marketing .digital-marketing-top-section h4 {
+      font-size: 7rem;
+      /* line-height: 8rem; */
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .digital-marketing .digital-marketing-top-section p {
+      font-size: 5rem;
+    }
+
+    .digital-marketing .digital-marketing-top-section h4 {
+      font-size: 13rem;
+      line-height: 12rem;
+    }
   }
 }
 </style>

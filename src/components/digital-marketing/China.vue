@@ -38,7 +38,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 4.375rem;
-  line-height: 90px;
+  line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
   margin-bottom: 7rem;
@@ -52,7 +52,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 210%;
   color: #6f6f6f;
   margin-bottom: 1rem;
@@ -64,11 +64,17 @@
 
 @media screen and (max-width: 900px) {
   .china .el-row .el-col:first-of-type {
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
   }
 
   .china h4 {
     word-break: break-word;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .china ul li {
+    font-size: 3rem;
   }
 }
 </style>
