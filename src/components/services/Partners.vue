@@ -62,8 +62,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
-  line-height: 90px;
+  font-size: 3.125rem;
+  line-height: 5.625rem;
   text-align: center;
   letter-spacing: -0.005em;
   color: #111111;
@@ -74,5 +74,11 @@
   width: 100%;
   /* height: 100%;
   object-fit: contain; */
+}
+
+@media screen and (max-width: 600px) {
+  .services .partners h4 {
+    font-size: 5rem;
+  }
 }
 </style>

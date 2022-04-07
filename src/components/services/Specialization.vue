@@ -42,7 +42,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 3.125rem;
   /* line-height: 90px; */
   letter-spacing: -0.005em;
   color: #111111;
@@ -59,8 +59,8 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 36px;
+  font-size: 1.625rem;
+  line-height: 2.25rem;
   color: #111111;
   margin-top: 1.5rem;
   display: flex;
@@ -74,7 +74,28 @@
   color: #12bbc6;
 }
 
-@media screen and (max-width: 1193px) {
+@media screen and (max-width: 1199px) {
+  .services .specialization h4 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services .specialization h4 {
+    font-size: 4rem;
+  }
+
+  .services .specialization li {
+    font-size: 2rem;
+  }
+
+  .services .specialization li::before {
+    content: "+";
+    font-size: 1.5rem;
+  }
+}
+
+/* @media screen and (max-width: 1193px) {
   .services .specialization h4 {
     font-size: 40px;
     width: 100%;
@@ -83,5 +104,5 @@
   .services .specialization li {
     font-size: 16px;
   }
-}
+} */
 </style>

@@ -37,11 +37,12 @@
 
 <style scoped>
 .project-lists {
-  padding: 6rem 0;
+  padding: 0 0 6rem 0;
 }
 
 .project-lists .el-row .el-col {
   margin-bottom: 9.5rem;
+  /* margin-bottom: -12rem; */
 }
 
 .project-lists .el-row .el-col:first-of-type img:first-child {
@@ -59,8 +60,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 46px;
+  font-size: 2.375rem;
+  line-height: 2.875rem;
   text-align: right;
   letter-spacing: -0.014em;
   color: #111111;
@@ -71,8 +72,8 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 36px;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
   text-align: right;
   color: #111111;
 }
@@ -123,13 +124,30 @@
 
 @media screen and (max-width: 1069px) {
   .project-lists .el-row .el-col:nth-of-type(2) p.project-name {
-    margin-top: -6rem;
+    margin-top: -3.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .project-lists .el-row .el-col p.project-name {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-top: -4rem;
+  }
+
+  .project-lists .el-row .el-col:nth-of-type(2) p.project-name {
+    margin-top: -8rem;
+  }
+
+  .project-lists .el-row .el-col p:nth-of-type(2) {
+    font-size: 2.6rem;
+    line-height: 2.25rem;
   }
 }
 
 @media screen and (max-width: 399px) {
-  .project-lists .el-row .el-col p.project-name {
-    font-size: 28px;
-  }
+  /* .project-lists .el-row .el-col p.project-name {
+    font-size: 1.75rem;
+  } */
 }
 </style>

@@ -58,7 +58,7 @@ export default {
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 135%;
   letter-spacing: 0.58em;
   color: #ffffff;
@@ -69,7 +69,7 @@ export default {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 2.8125rem;
   line-height: 200%;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -83,20 +83,20 @@ export default {
   cursor: pointer;
 }
 .work-together .btn-content .btn {
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
   border-radius: 50%;
   background: rgba(255, 250, 250, 0.5);
   display: inline-block;
 }
 
 .work-together .btn-content span {
-  margin-left: -33px;
+  margin-left: -2.0625rem;
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: 0.24em;
   color: #ffffff;
   /* align-self: flex-end; */
@@ -106,7 +106,31 @@ export default {
 .work-together .btn-content .el-icon {
   color: #fff;
   margin-left: 1rem;
-  font-size: 10px;
+  font-size: 0.625rem;
   margin-top: 0.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .work-together p {
+    font-size: 2.5rem;
+  }
+
+  .work-together h4 {
+    font-size: 4rem;
+  }
+
+  .work-together .btn-content .btn {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .work-together .btn-content span {
+    font-size: 2rem;
+    line-height: 1rem;
+  }
+
+  .work-together .btn-content .el-icon {
+    font-size: 1.3rem;
+  }
 }
 </style>

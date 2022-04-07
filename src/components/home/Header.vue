@@ -70,20 +70,6 @@ export default {
   },
   mounted() {
     gsap.fromTo(
-      ".body-content",
-      {
-        x: -100,
-        opacity: 0,
-        // duration: 3,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1,
-        delay: 2,
-      }
-    );
-    gsap.fromTo(
       "header",
       {
         background: "white",
@@ -97,6 +83,35 @@ export default {
         // delay: 1,
         x: 0,
         ease: "circ.out",
+      }
+    );
+
+    gsap.fromTo(
+      ".header-content",
+      {
+        y: 100,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        delay: 2,
+        opacity: 1,
+        duration: 2,
+      }
+    );
+
+    gsap.fromTo(
+      ".body-content",
+      {
+        x: -100,
+        opacity: 0,
+        // duration: 3,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 2,
+        delay: 4,
       }
     );
   },

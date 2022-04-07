@@ -48,6 +48,10 @@
   padding: 6rem 0;
 }
 
+.footer .logo {
+  width: 15rem;
+}
+
 .footer .logo + p {
   font-family: "Montserrat";
   font-style: normal;
@@ -67,6 +71,7 @@
   margin-right: 1rem;
   cursor: pointer;
   transition: 0.5s;
+  width: 1.5rem;
 }
 
 .footer .social-media-icons img:hover {
@@ -143,9 +148,17 @@
 }
 
 @media screen and (max-width: 991px) {
+  .footer .logo {
+    width: 25rem;
+  }
+
   .footer .logo + p {
     font-size: 3rem;
     line-height: 160%;
+  }
+
+  .footer .social-media-icons img {
+    width: 4rem;
   }
 
   .footer p.contact-us {
