@@ -39,7 +39,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 135%;
   letter-spacing: 0.58em;
   color: #000000;
@@ -50,8 +50,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 70px;
-  line-height: 90px;
+  font-size: 4.375rem;
+  line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
   margin-bottom: 2rem;
@@ -60,5 +60,16 @@
 
 .agency .btn {
   margin-left: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .agency p {
+    font-size: 3rem;
+  }
+
+  .agency h4 {
+    font-size: 7rem;
+    line-height: 6.5rem;
+  }
 }
 </style>

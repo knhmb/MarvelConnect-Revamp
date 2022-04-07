@@ -56,33 +56,20 @@
   background: #f7f7f7;
   background-image: url("../../assets/Ellipse-20-1.png");
   background-repeat: no-repeat;
-  /* background-size: ; */
   background-size: 57%;
   background-position: center;
 }
 
 .circle {
   position: relative;
-  /* padding-bottom: 17rem; */
 }
-/* .our-mission::after {
-  content: "";
-  position: absolute;
-  background: rgba(0, 0, 0, 0.05);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: 800px;
-  border-radius: 100%;
-} */
 
 .our-mission h4 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
-  line-height: 90px;
+  font-size: 3.125rem;
+  line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
 }
@@ -100,7 +87,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 140%;
   letter-spacing: -0.005em;
   color: #111111;
@@ -111,7 +98,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 210%;
   color: #6f6f6f;
 }
@@ -122,7 +109,18 @@
   }
 }
 
-/* .our-mission .el-row .el-col:nth-of-type(2) {
-  margin-top: 7rem;
-} */
+@media screen and (max-width: 750px) {
+  .our-mission h4 {
+    font-size: 6rem;
+    line-height: 5.625rem;
+  }
+
+  .our-mission ul li h5 {
+    font-size: 3rem;
+  }
+
+  .our-mission ul li p {
+    font-size: 2rem;
+  }
+}
 </style>

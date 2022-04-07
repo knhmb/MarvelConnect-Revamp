@@ -25,8 +25,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
-  line-height: 90px;
+  font-size: 3.125rem;
+  line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
   margin-left: 2rem;
@@ -41,5 +41,12 @@
 .work-process img.img-process {
   width: 100%;
   margin-left: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .work-process h4 {
+    font-size: 5rem;
+    line-height: 5.625rem;
+  }
 }
 </style>

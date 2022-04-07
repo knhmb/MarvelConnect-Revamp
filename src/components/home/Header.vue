@@ -103,7 +103,7 @@ export default {
     gsap.fromTo(
       ".body-content",
       {
-        x: -100,
+        x: -200,
         opacity: 0,
         // duration: 3,
       },
