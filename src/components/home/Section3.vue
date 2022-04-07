@@ -26,7 +26,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 135%;
   letter-spacing: 0.58em;
   color: #ffffff;
@@ -36,7 +36,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 200%;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -44,9 +44,19 @@
   margin-left: 3rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
+  .section-3 h4 {
+    font-size: 3rem;
+  }
+
+  .section-3 p {
+    font-size: 2.5rem;
+  }
+}
+
+/* @media screen and (max-width: 900px) {
   .section-3 p {
     font-size: 20px;
   }
-}
+} */
 </style>

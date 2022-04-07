@@ -205,22 +205,33 @@
     text-align: center;
   }
 
+  .featured-work h2 {
+    font-size: 5rem;
+    line-height: 9rem;
+  }
+
+  .featured-work p {
+    font-size: 3rem;
+  }
+
   .featured-work .images p {
     position: absolute;
-    bottom: 5rem;
+    bottom: 8rem;
     right: 1.5rem;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
+    font-size: 3rem;
     /* font-size: 28px;
     line-height: 46px; */
     text-align: right;
     letter-spacing: -0.014em;
     color: #111111;
   }
-
   .featured-work .images p.additional-info {
-    right: 1.5rem;
+    right: 5.5rem;
+    font-size: 2rem;
+    bottom: 5rem;
   }
 
   .featured-work .images .science-parks {
@@ -228,7 +239,7 @@
   }
 
   .featured-work .images .science-parks p {
-    bottom: 3rem;
+    bottom: 4rem;
     right: 4.5rem;
     color: #fff;
   }
@@ -243,7 +254,7 @@
   }
 
   .featured-work .images .dentist-app p {
-    bottom: 3rem;
+    bottom: 4rem;
     right: 1.5rem;
     color: #111;
   }
@@ -254,7 +265,7 @@
   }
 
   .featured-work .images .dentist-app-2 p {
-    bottom: 3rem;
+    bottom: 4rem;
     right: 1.5rem;
     color: #111;
     word-break: break-all;

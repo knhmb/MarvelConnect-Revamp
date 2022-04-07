@@ -21,7 +21,7 @@
           </p>
           <base-button class="btn">VIEW OUR SERVICES</base-button>
         </el-col>
-        <el-col class="hidden-lg-and-up" :span="24">
+        <el-col class="hidden-md-and-up" :span="24">
           <p class="description">
             We believed a well-designed website is essential for building a
             successful business image.
@@ -45,7 +45,7 @@
           </p>
           <base-button class="btn">VIEW OUR SERVICES</base-button>
         </el-col>
-        <el-col class="hidden-lg-and-up" :span="24">
+        <el-col class="hidden-md-and-up" :span="24">
           <p class="description">
             For many years, we have adopted cutting-edge technologies in
             application development, from the traditional CGI, C, and Java to
@@ -69,7 +69,7 @@
           </p>
           <base-button class="btn">VIEW OUR SERVICES</base-button>
         </el-col>
-        <el-col class="hidden-lg-and-up" :span="24">
+        <el-col class="hidden-md-and-up" :span="24">
           <p class="description">
             Through digitization, a business can achieve increased brand value,
             expand the client base, and best utilization of human resources.
@@ -169,7 +169,7 @@ export default {
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 135%;
   letter-spacing: 0.58em;
   color: #111111;
@@ -211,8 +211,8 @@ export default {
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
   letter-spacing: 0.018em;
   color: rgba(0, 0, 0, 0.5);
   margin-left: 3.5rem;
@@ -259,19 +259,39 @@ export default {
   }
 
   .section-4 p.description {
-    margin-top: 2rem;
+    margin-top: 8rem;
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 900px) {
+@media screen and (max-width: 991px) {
+  .section-4 .title {
+    font-size: 2rem;
+  }
+
+  .section-4 p.description {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .section-4 p.description {
     margin-top: 7rem;
   }
+
+  .section-4 p.watermark {
+    font-size: 9rem;
+  }
 }
 
-@media screen and (min-width: 1820px) {
+/* @media screen and (max-width: 391px) {
+  .section-4 p.watermark {
+    font-size: 9rem;
+  }
+} */
+
+/* @media screen and (min-width: 1820px) {
   .section-4 .el-row:not(:last-of-type) {
-    /* margin-bottom: 22rem; */
     margin-top: 12rem;
   }
 
@@ -282,5 +302,5 @@ export default {
   .section-4 .btn {
     margin-left: 5rem;
   }
-}
+} */
 </style>

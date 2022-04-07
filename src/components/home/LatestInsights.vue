@@ -41,8 +41,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
+  font-size: 3.375rem;
+  line-height: 4.125rem;
   letter-spacing: -0.005em;
   color: #111111;
 }
@@ -51,8 +51,8 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
   letter-spacing: 0.018em;
   color: #111111;
 }
@@ -83,7 +83,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 1.625rem;
   line-height: 153%;
   letter-spacing: 0.02em;
   color: #111111;
@@ -93,7 +93,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 140%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -108,6 +108,27 @@
 
   .latest-insights .el-row .el-col:nth-of-type(2n) {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .latest-insights h4 {
+    font-size: 5rem;
+    line-height: 8rem;
+  }
+
+  .latest-insights p {
+    font-size: 2.5rem;
+  }
+
+  .latest-insights .el-row p.description {
+    font-size: 3rem;
+    line-height: 153%;
+  }
+
+  .latest-insights .el-row p.title {
+    font-size: 2rem;
+    line-height: 140%;
   }
 }
 </style>

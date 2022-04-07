@@ -52,7 +52,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -77,7 +77,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 140%;
   letter-spacing: 0.15em;
   color: #ffffff;
@@ -91,7 +91,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 140%;
   letter-spacing: 0.02em;
   color: #3c91d6;
@@ -107,7 +107,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 140%;
   letter-spacing: 0.15em;
   color: #ffffff;
@@ -124,7 +124,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 125%;
   letter-spacing: 0.05em;
   color: #9c9c9c;
@@ -136,10 +136,41 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   letter-spacing: 0.055em;
   color: #545453;
+}
+
+@media screen and (max-width: 991px) {
+  .footer .logo + p {
+    font-size: 3rem;
+    line-height: 160%;
+  }
+
+  .footer p.contact-us {
+    font-size: 2rem;
+    line-height: 140%;
+    margin-top: 1rem;
+  }
+
+  .footer .contact-info a {
+    font-size: 3rem;
+    line-height: 140%;
+  }
+
+  .footer .explore li {
+    font-size: 3rem;
+    line-height: 125%;
+  }
+
+  .footer .explore p {
+    font-size: 3rem;
+  }
+
+  .footer .explore p.location {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
