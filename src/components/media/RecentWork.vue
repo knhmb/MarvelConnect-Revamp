@@ -28,8 +28,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 70px;
-  line-height: 90px;
+  font-size: 4.375rem;
+  line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
   margin-bottom: 5rem;
@@ -47,8 +47,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 34px;
-  line-height: 46px;
+  font-size: 2.125rem;
+  line-height: 2.875rem;
   text-align: right;
   letter-spacing: -0.014em;
   color: #111111;
@@ -63,8 +63,8 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 36px;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
   text-align: right;
   color: #111111;
   /* margin-left: 8rem; */
@@ -90,13 +90,20 @@
 
 @media screen and (max-width: 750px) {
   .recent-work p:first-of-type {
-    font-size: 28px;
-    margin-top: -4.5rem;
+    /* font-size: 28px; */
+    font-size: 4rem;
+    margin-top: -7.5rem;
   }
 
   .recent-work .el-col:nth-of-type(2) p:first-of-type {
-    font-size: 28px;
-    margin-top: -3rem;
+    /* font-size: 28px; */
+    margin-top: -4rem;
+  }
+
+  .recent-work p:nth-of-type(2) {
+    font-size: 2rem;
+    line-height: 4rem;
+    /* margin-left: 8rem; */
   }
 }
 </style>
