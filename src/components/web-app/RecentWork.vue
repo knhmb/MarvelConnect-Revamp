@@ -28,8 +28,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 70px;
-  line-height: 90px;
+  font-size: 4.375rem;
+  line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
   margin-bottom: 5rem;
@@ -49,8 +49,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 34px;
-  line-height: 46px;
+  font-size: 2.125rem;
+  line-height: 2.875rem;
   text-align: right;
   letter-spacing: -0.014em;
   color: #111111;
@@ -66,8 +66,8 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 36px;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
   text-align: right;
   color: #111111;
   position: absolute;
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 1280px) {
   .recent-work p:first-of-type {
-    font-size: 32px;
+    /* font-size: 32px; */
     margin-top: -5.5rem;
     right: -0.5rem;
   }
@@ -124,24 +124,28 @@
 }
 
 @media screen and (max-width: 750px) {
-  .recent-work p:first-of-type {
-    font-size: 28px;
-    margin-top: -4.5rem;
-  }
-
-  .recent-work .el-col:nth-of-type(2) p:first-of-type {
-    font-size: 28px;
-    margin-top: -3rem;
-  }
 }
 
 @media screen and (max-width: 750px) {
   .recent-work p:first-of-type {
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 3rem;
+    line-height: 1rem;
+  }
+
+  .recent-work p:first-of-type {
+    /* font-size: 28px; */
+    margin-top: -4.5rem;
+  }
+
+  .recent-work .el-col:nth-of-type(2) p:first-of-type {
+    /* font-size: 28px; */
+    margin-top: -3rem;
   }
 
   .recent-work p:nth-of-type(2) {
     margin-top: -2.5rem;
+    font-size: 2rem;
   }
 
   .recent-work .el-col:nth-of-type(2) p:first-of-type {
@@ -156,13 +160,13 @@
 @media screen and (max-width: 390px) {
   .recent-work p:first-of-type,
   .recent-work .el-col:nth-of-type(2) p:first-of-type {
-    font-size: 22px;
+    /* font-size: 22px; */
   }
 }
 @media screen and (max-width: 360px) {
   .recent-work p:first-of-type,
   .recent-work .el-col:nth-of-type(2) p:first-of-type {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
 }
 </style>

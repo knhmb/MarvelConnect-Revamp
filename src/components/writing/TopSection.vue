@@ -218,12 +218,12 @@ export default {
   }
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .writing .writing-top-section .el-col:first-of-type,
   .writing .writing-top-section .el-col:nth-of-type(2) {
-    /* padding-left: 2rem; */
+    padding-left: 2rem;
   }
-}
+} */
 
 @media screen and (max-width: 780px) {
   .writing .writing-top-section p {
