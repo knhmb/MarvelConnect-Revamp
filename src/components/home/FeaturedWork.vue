@@ -102,6 +102,11 @@
   object-fit: contain; */
 
   /* margin-top: 1.5rem; */
+  transition: 0.8s;
+}
+
+.featured-work .images img:hover {
+  transform: rotateY(30deg);
 }
 
 .featured-work .images p {
