@@ -57,7 +57,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 140%;
   letter-spacing: -0.005em;
   color: #111111;
@@ -67,7 +67,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 210%;
   color: #6f6f6f;
   margin-bottom: 8rem;
@@ -86,5 +86,24 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 750px) {
+  .challenge h4 {
+    font-size: 4rem;
+  }
+
+  .challenge p {
+    font-size: 2.5rem;
+  }
+
+  .challenge img {
+    width: 100%;
+  }
+
+  .challenge img.social-distancing-img {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
 }
 </style>

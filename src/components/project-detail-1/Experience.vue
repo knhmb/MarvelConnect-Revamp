@@ -49,7 +49,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 140%;
   letter-spacing: -0.005em;
   color: #111111;
@@ -59,7 +59,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 210%;
   color: #6f6f6f;
   margin-bottom: 6rem;
@@ -110,6 +110,21 @@
   .experience .el-col:nth-of-type(3) h4,
   .experience .el-col:nth-of-type(3) p {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .experience h4 {
+    font-size: 4rem;
+  }
+
+  .experience p {
+    font-size: 2.5rem;
+  }
+
+  .challenge img.social-distancing-img {
+    width: 100%;
+    margin-bottom: 4rem;
   }
 }
 </style>

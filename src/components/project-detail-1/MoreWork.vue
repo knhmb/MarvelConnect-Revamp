@@ -2,10 +2,16 @@
   <section class="more-work">
     <base-container>
       <h4>More Work</h4>
-      <el-row>
-        <el-col :span="12">
+      <el-row justify="space-between">
+        <el-col :span="11">
           <img src="../../assets/DENTISTCLINIC.png" alt="" />
           <p>Dentist Clinic APP</p>
+          <p>Know More</p>
+        </el-col>
+        <el-col :span="11">
+          <img src="../../assets/image-8.png" alt="" />
+          <p>The Best Hotel Booking Sites</p>
+          <p>Know More</p>
         </el-col>
       </el-row>
     </base-container>
@@ -25,7 +31,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 54px;
+  font-size: 3.375rem;
   line-height: 140%;
   letter-spacing: -0.005em;
   color: #111111;
@@ -42,8 +48,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 46px;
+  font-size: 2rem;
+  line-height: 2.875rem;
   text-align: right;
   letter-spacing: -0.014em;
   color: #111111;
@@ -52,15 +58,22 @@
   bottom: 2rem;
 }
 
-@media screen and (max-width: 722px) {
-  .more-work p:first-of-type {
-    font-size: 28px;
-  }
+.more-work p:nth-of-type(2) {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
+  text-align: right;
+  color: #111111;
+  position: absolute;
+  bottom: 0rem;
+  right: -1rem;
 }
-@media screen and (max-width: 536px) {
-  .more-work p:first-of-type {
-    font-size: 18px;
-    bottom: 0;
+
+@media screen and (max-width: 722px) {
+  .more-work h4 {
+    font-size: 4rem;
   }
 }
 </style>
