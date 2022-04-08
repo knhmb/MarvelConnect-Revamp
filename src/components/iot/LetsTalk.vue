@@ -48,8 +48,8 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
   color: #111111;
   margin-bottom: 2rem;
 }
@@ -64,7 +64,7 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 210%;
   color: #6f6f6f;
   margin-bottom: 2rem;
@@ -83,6 +83,17 @@
 @media screen and (max-width: 991px) {
   .iot .blog p:first-of-type {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .iot .blog ul li {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .iot .blog p {
+    font-size: 3rem;
   }
 }
 </style>
