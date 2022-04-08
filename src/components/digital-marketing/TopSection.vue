@@ -158,6 +158,7 @@ export default {
   .el-col:nth-of-type(3)
   .blog-text {
   margin: 3rem 2rem;
+  padding: 0 10rem;
 }
 
 .digital-marketing
@@ -234,12 +235,12 @@ export default {
   }
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .digital-marketing .digital-marketing-top-section .el-col:first-of-type,
   .digital-marketing .digital-marketing-top-section .el-col:nth-of-type(2) {
     padding-left: 2rem;
   }
-}
+} */
 @media screen and (max-width: 780px) {
   .digital-marketing .digital-marketing-top-section p {
     font-size: 3rem;

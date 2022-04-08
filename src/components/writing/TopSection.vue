@@ -154,6 +154,7 @@ export default {
 
 .writing .writing-top-section .el-col:nth-of-type(3) .blog-text {
   margin: 3rem 2rem;
+  padding: 0 10rem;
 }
 
 .writing .writing-top-section .el-col:nth-of-type(3) p:first-of-type {
