@@ -282,6 +282,10 @@ export default {
     display: none;
   }
 
+  .project-detail-1 .project-detail-1-top-section .el-col:nth-of-type(4) {
+    margin-top: 3rem;
+  }
+
   .project-detail-1 .project-detail-1-top-section .el-col-offset-8 {
     margin-left: 0;
   }

@@ -49,8 +49,12 @@
   background: #e6e6e6;
 }
 
+.challenge .el-col:first-of-type {
+  text-align: end;
+}
+
 .challenge img {
-  width: 50%;
+  width: 70%;
 }
 
 .challenge h4 {
@@ -91,6 +95,10 @@
 @media screen and (max-width: 750px) {
   .challenge h4 {
     font-size: 4rem;
+  }
+
+  .challenge .el-col:nth-of-type(2) h4 {
+    margin-top: 4rem;
   }
 
   .challenge p {
