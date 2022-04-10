@@ -27,7 +27,7 @@ export default {
 <style scoped>
 .work-together {
   background: #00559a;
-  padding: 3rem 0;
+  padding: 6rem 0;
   position: relative;
   overflow: hidden;
 }
