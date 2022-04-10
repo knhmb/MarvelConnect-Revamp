@@ -13,6 +13,7 @@ import AI from "./pages/AI.vue";
 import IOT from "./pages/IOT.vue";
 import ProjectDetail1 from "./pages/ProjectDetail1.vue";
 import ProjectDetail2 from "./pages/ProjectDetail2.vue";
+import ProjectDetail3 from "./pages/ProjectDetail3.vue";
 
 const router = createRouter({
   scrollBehavior(_, _2, savedPosition) {
@@ -37,6 +38,7 @@ const router = createRouter({
     { path: "/internet-of-things", component: IOT },
     { path: "/project-detail-1", component: ProjectDetail1 },
     { path: "/project-detail-2", component: ProjectDetail2 },
+    { path: "/project-detail-3", component: ProjectDetail3 },
   ],
 });
 

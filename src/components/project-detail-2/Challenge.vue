@@ -56,7 +56,7 @@
 <style scoped>
 .challenge {
   padding: 3rem 0;
-  background: #e6e6e6;
+  background: #fff;
 }
 
 .challenge .el-col.img-content {
