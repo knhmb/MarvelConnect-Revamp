@@ -75,6 +75,7 @@ export default {
 .project-detail-3 .project-detail-3-top-section {
   padding: 3rem 0;
   position: relative;
+  /* transition: all 0.5s; */
   /* overflow: hidden; */
 }
 

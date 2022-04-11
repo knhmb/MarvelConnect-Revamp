@@ -3,19 +3,25 @@
     <div class="header-content">
       <el-row class="row-head">
         <el-col :span="12">
-          <img
-            @click="$router.push('/')"
-            class="logo"
-            src="../../assets/brand-logo-1.png"
-            alt=""
-          />
+          <img @click="$router.push('/')" class="logo" :src="logo" alt="" />
         </el-col>
         <el-col class="last-col-head" :span="12">
-          <span class="menu-text">Let's Talk</span>
-          <div class="nav">
+          <span :class="{ open: openNav }" class="menu-text">Let's Talk</span>
+          <div @click="toggleNav" :class="{ open: openNav }" class="nav">
             <div class="one"></div>
             <div class="two"></div>
             <div class="three"></div>
+          </div>
+          <div :class="{ open: openNav }" class="wrapper">
+            <ul>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Insights</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <p class="email">info@marvelconnect.com</p>
+            <p class="phone">+852-31167505</p>
           </div>
         </el-col>
       </el-row>
@@ -25,7 +31,37 @@
 
 <script>
 import { gsap } from "gsap";
+// import SidebarNav from "./SidebarNav.vue";
 export default {
+  components: {
+    // SidebarNav,
+  },
+  data() {
+    return {
+      openNav: false,
+      logo: require("../../assets/brand-logo-1.png"),
+    };
+  },
+  methods: {
+    toggleNav() {
+      const el = document.querySelector(".project-detail-3-top-section");
+      const body = document.querySelector("body");
+      if (this.openNav === false) {
+        this.openNav = true;
+        el.style.opacity = 0;
+        el.style.zIndex = -1;
+        this.logo = require("../../assets/brand-logo.png");
+        body.style.overflowY = "hidden";
+      } else {
+        this.openNav = false;
+        el.style.opacity = 1;
+        el.style.zIndex = 1;
+        this.logo = require("../../assets/brand-logo-1.png");
+        body.style.overflowY = "visible";
+      }
+      // this.openNav === false ? (this.openNav = true) : (this.openNav = false);
+    },
+  },
   mounted() {
     gsap.fromTo(
       ".header-content",
@@ -48,6 +84,23 @@ header {
   position: relative;
 }
 
+.header-content .open.nav {
+  background: #fff;
+}
+
+.header-content .open.nav div {
+  background: #111;
+}
+.header-content .open .one {
+  transform: rotate(45deg);
+}
+.header-content .open .two {
+  opacity: 0;
+}
+.header-content .open .three {
+  transform: rotate(-45deg);
+}
+
 .header-content {
   padding: 3rem 4rem;
 }
@@ -60,12 +113,16 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .logo {
   /* color: white; */
   width: 13.5rem;
   cursor: pointer;
+  position: relative;
+  z-index: 4;
 }
 
 span.menu-text {
@@ -79,6 +136,11 @@ span.menu-text {
   position: relative;
   text-transform: uppercase;
   cursor: pointer;
+  z-index: 2;
+  transition: 0.5s ease-out;
+}
+.open.menu-text {
+  color: #fff;
 }
 
 span.menu-text::after {
@@ -90,6 +152,9 @@ span.menu-text::after {
   top: 1.5625rem;
   background: #111;
 }
+.open.menu-text::after {
+  background: #fff;
+}
 
 .nav div {
   height: 0.125rem;
@@ -97,7 +162,7 @@ span.menu-text::after {
   margin: 0.3125rem 0;
   border-radius: 1.5rem;
   position: absolute;
-  transition: 0.2s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .nav {
@@ -112,6 +177,8 @@ span.menu-text::after {
   flex-direction: column;
   position: relative;
   cursor: pointer;
+  z-index: 2;
+  transition: 0.5s ease-out;
 }
 
 .one {
@@ -132,6 +199,108 @@ span.menu-text::after {
 
 .nav:hover div.two {
   width: 50%;
+}
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #111;
+  clip-path: circle(1.15rem at calc(100% - 5.2rem) 5rem);
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+.open.wrapper {
+  clip-path: circle(75%);
+}
+
+.wrapper .email {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #3c91d6;
+  position: absolute;
+  right: 20%;
+  bottom: 40%;
+}
+
+.wrapper .email::after {
+  content: "";
+  background: #3c91d6;
+  width: 90%;
+  height: 0.1rem;
+  left: 0;
+  display: block;
+}
+
+.wrapper .phone {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #3c91d6;
+  position: absolute;
+  bottom: 33%;
+  right: 24.6%;
+}
+
+.wrapper .phone::after {
+  content: "";
+  background: #3c91d6;
+  width: 110%;
+  height: 0.1rem;
+  left: 0;
+  display: block;
+}
+
+.wrapper ul {
+  position: absolute;
+  top: 60%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  /* text-align: center; */
+}
+.wrapper ul li {
+  /* margin: 15px 0; */
+}
+.wrapper ul li a {
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.75rem;
+  line-height: 126%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+/* .wrapper ul li a:after {
+  position: absolute;
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  border-radius: 50px;
+  transform: scaleY(0);
+  z-index: -1;
+  transition: transform 0.3s ease;
+} */
+/* .wrapper ul li a:hover:after {
+  transform: scaleY(1);
+} */
+.wrapper ul li a:hover {
+  color: #4158d0;
+  padding-left: 0.5rem;
 }
 
 @media screen and (max-width: 900px) {
