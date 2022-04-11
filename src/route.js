@@ -14,6 +14,7 @@ import IOT from "./pages/IOT.vue";
 import ProjectDetail1 from "./pages/ProjectDetail1.vue";
 import ProjectDetail2 from "./pages/ProjectDetail2.vue";
 import ProjectDetail3 from "./pages/ProjectDetail3.vue";
+import ProjectDetail4 from "./pages/ProjectDetail4.vue";
 
 const router = createRouter({
   scrollBehavior(_, _2, savedPosition) {
@@ -39,6 +40,7 @@ const router = createRouter({
     { path: "/project-detail-1", component: ProjectDetail1 },
     { path: "/project-detail-2", component: ProjectDetail2 },
     { path: "/project-detail-3", component: ProjectDetail3 },
+    { path: "/project-detail-4", component: ProjectDetail4 },
   ],
 });
 
