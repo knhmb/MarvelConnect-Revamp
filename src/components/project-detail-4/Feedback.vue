@@ -40,6 +40,16 @@
     </el-row>
     <!-- </base-container> -->
   </section>
+  <section class="artificial-teeth">
+    <el-row>
+      <el-col>
+        <img
+          src="../../assets/artificial-jaw-beautiful-white-teeth-oral-hygiene-concept-1.png"
+          alt=""
+        />
+      </el-col>
+    </el-row>
+  </section>
 </template>
 
 <style scoped>
@@ -54,7 +64,7 @@
 
 .feedback .el-col.p-10 {
   padding-left: 10rem;
-  padding-right: 3rem;
+  padding-right: 6rem;
 }
 
 .feedback h4 {
@@ -89,6 +99,12 @@
   width: 100%;
   /* margin: 4rem 0; */
   margin-bottom: 4rem;
+}
+
+.artificial-teeth img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 991px) {

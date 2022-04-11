@@ -4,7 +4,8 @@
     <top-section></top-section>
     <Challenge />
     <Feedback />
-    <!-- <more-work></more-work> -->
+    <Dental />
+    <more-work></more-work>
     <work-together></work-together>
   </section>
 </template>
@@ -14,7 +15,8 @@ import TheHeader from "../components/common/TheHeader.vue";
 import TopSection from "../components/project-detail-4/TopSection.vue";
 import Challenge from "../components/project-detail-4/Challenge.vue";
 import Feedback from "../components/project-detail-4/Feedback.vue";
-// import MoreWork from "../components/project-detail-1/MoreWork.vue";
+import Dental from "../components/project-detail-4/Dental.vue";
+import MoreWork from "../components/project-detail-4/MoreWork.vue";
 import WorkTogether from "../components/project-detail-1/WorkTogether.vue";
 
 export default {
@@ -23,7 +25,8 @@ export default {
     TopSection,
     Challenge,
     Feedback,
-    // MoreWork,
+    Dental,
+    MoreWork,
     WorkTogether,
   },
 };
