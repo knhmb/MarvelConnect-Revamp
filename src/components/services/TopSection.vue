@@ -1,5 +1,5 @@
 <template>
-  <section class="services-top-section">
+  <section class="services-top-section sidebar-menu">
     <base-container>
       <el-row>
         <el-col>
@@ -59,8 +59,9 @@ export default {
 </script>
 
 <style scoped>
-.service .services-top-section {
+.services .services-top-section {
   min-height: 100vh;
+  position: relative;
 }
 
 .services .services-top-section .el-row .el-col:first-of-type p {

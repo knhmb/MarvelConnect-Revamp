@@ -1,6 +1,6 @@
 <template>
-  <section class="contact-top-section">
-    <the-header></the-header>
+  <section class="contact-top-section sidebar-menu">
+    <!-- <the-header></the-header> -->
     <base-container>
       <div class="contact-content">
         <h4>
@@ -24,13 +24,13 @@
 
 <script>
 import Form from "./Form.vue";
-import TheHeader from "../common/TheHeader.vue";
+// import TheHeader from "../common/TheHeader.vue";
 import { gsap } from "gsap";
 
 export default {
   components: {
     Form,
-    TheHeader,
+    // TheHeader,
   },
   mounted() {
     gsap.fromTo(
@@ -55,8 +55,9 @@ export default {
 .contact-us .contact-top-section {
   /* padding: 1rem 0; */
   padding-bottom: 3rem;
-  background: #e6e6e6;
+  /* background: #e6e6e6; */
   min-height: 100vh;
+  position: relative;
 }
 
 .contact-us .contact-top-section h4 {

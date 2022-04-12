@@ -1,5 +1,5 @@
 <template>
-  <section class="about-top-section">
+  <section class="about-top-section sidebar-menu">
     <base-container>
       <el-row>
         <el-col>
@@ -52,6 +52,10 @@ export default {
 
 
 <style scoped>
+.about .about-top-section {
+  position: relative;
+}
+
 .about .about-top-section .el-row .el-col:first-of-type p {
   font-family: "Abel";
   font-style: normal;

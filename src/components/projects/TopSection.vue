@@ -1,5 +1,5 @@
 <template>
-  <div class="top-section">
+  <div class="top-section sidebar-menu">
     <base-container>
       <el-row class="content">
         <el-col>
@@ -43,6 +43,7 @@ export default {
 .projects .top-section {
   padding: 3rem 0;
   min-height: 100vh;
+  position: relative;
 }
 .projects .top-section p.case-study {
   font-family: "Abel";

@@ -1,5 +1,5 @@
 <template>
-  <section class="digital-marketing-top-section">
+  <section class="digital-marketing-top-section sidebar-menu">
     <img class="circular" src="../../assets/Subtract.png" alt="" />
     <img class="dotted" src="../../assets/Group-79.png" alt="" />
     <p class="p1">WHAT WE DO</p>

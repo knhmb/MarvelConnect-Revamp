@@ -3,7 +3,7 @@
     <div class="header-content">
       <el-row class="row-head">
         <el-col :span="12">
-          <img @click="$router.push('/')" class="logo" :src="logo" alt="" />
+          <img @click="navigate('home')" class="logo" :src="logo" alt="" />
         </el-col>
         <el-col class="last-col-head" :span="12">
           <span :class="{ open: openNav }" class="menu-text">Let's Talk</span>
@@ -15,13 +15,23 @@
           <div :class="{ open: openNav }" class="wrapper">
             <ul>
               <li><a href="#">Work</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About</a></li>
+              <li><a @click="navigate('services')" href="#">Services</a></li>
+              <li><a @click="navigate('about-us')" href="#">About</a></li>
               <li><a href="#">Insights</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a @click="navigate('contact')" href="#">Contact</a></li>
             </ul>
             <p class="email">info@marvelconnect.com</p>
             <p class="phone">+852-31167505</p>
+            <p class="location">
+              Unit 1701, 17/F, Enterprise Square Three,39 Wang Chiu Road,
+              Kowloon Bay, Kowloon, Hong Kong
+            </p>
+            <div class="social-media-icons">
+              <img src="../../assets/icon-ig.png" alt="" />
+              <img src="../../assets/icon-facebook.png" alt="" />
+              <img src="../../assets/icon-twitter.png" alt="" />
+              <img src="../../assets/icon-linkedin.png" alt="" />
+            </div>
           </div>
         </el-col>
       </el-row>
@@ -44,7 +54,7 @@ export default {
   },
   methods: {
     toggleNav() {
-      const el = document.querySelector(".project-detail-3-top-section");
+      const el = document.querySelector(".sidebar-menu");
       const body = document.querySelector("body");
       if (this.openNav === false) {
         this.openNav = true;
@@ -53,13 +63,22 @@ export default {
         this.logo = require("../../assets/brand-logo.png");
         body.style.overflowY = "hidden";
       } else {
-        this.openNav = false;
-        el.style.opacity = 1;
-        el.style.zIndex = 1;
-        this.logo = require("../../assets/brand-logo-1.png");
-        body.style.overflowY = "visible";
+        this.resetValues();
       }
       // this.openNav === false ? (this.openNav = true) : (this.openNav = false);
+    },
+    resetValues() {
+      const el = document.querySelector(".sidebar-menu");
+      const body = document.querySelector("body");
+      this.openNav = false;
+      el.style.opacity = 1;
+      el.style.zIndex = 1;
+      this.logo = require("../../assets/brand-logo-1.png");
+      body.style.overflowY = "visible";
+    },
+    navigate(path) {
+      this.$router.push(`/${path}`);
+      this.resetValues();
     },
   },
   mounted() {
@@ -227,6 +246,7 @@ span.menu-text::after {
   position: absolute;
   right: 20%;
   bottom: 40%;
+  cursor: pointer;
 }
 
 .wrapper .email::after {
@@ -249,6 +269,7 @@ span.menu-text::after {
   position: absolute;
   bottom: 33%;
   right: 24.6%;
+  cursor: pointer;
 }
 
 .wrapper .phone::after {
@@ -258,6 +279,37 @@ span.menu-text::after {
   height: 0.1rem;
   left: 0;
   display: block;
+}
+
+.wrapper .location {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.055em;
+  color: #545453;
+  width: 20%;
+  position: absolute;
+  right: 13.1%;
+  bottom: 18%;
+}
+
+.wrapper .social-media-icons {
+  position: absolute;
+  bottom: 8%;
+  right: 21.2%;
+}
+
+.wrapper .social-media-icons img {
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 1.5rem;
+}
+
+.wrapper .social-media-icons img:hover {
+  transform: translateY(-0.5rem);
 }
 
 .wrapper ul {
@@ -308,13 +360,9 @@ span.menu-text::after {
     width: 100%;
   }
 
-  /* .header-content {
-    padding: 2rem 2rem;
+  .wrapper {
+    clip-path: circle(1.15rem at calc(100% - 6.5rem) 8rem);
   }
-
-  .body-content {
-    padding: 3rem 1rem;
-  } */
 }
 
 @media screen and (max-width: 900px) {
@@ -350,19 +398,101 @@ span.menu-text::after {
   .one {
     width: 50%;
     right: 1rem;
-    transform: translateY(-0.8rem);
+    transform: translateY(-1rem);
   }
 
   .two {
     width: 30%;
     right: 1rem;
-    transform: translateY(-0rem);
+    transform: translateY(-0.3rem);
   }
 
   .three {
     width: 50%;
     right: 1rem;
-    transform: translateY(0.8rem);
+    transform: translateY(0.5rem);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper .social-media-icons {
+    bottom: 19%;
+  }
+
+  .wrapper .location {
+    bottom: 28%;
+  }
+}
+
+.wrapper .phone {
+  bottom: 38%;
+}
+
+.wrapper .email {
+  bottom: 43%;
+}
+@media screen and (max-width: 550px) {
+  .wrapper ul {
+    top: 50%;
+  }
+
+  .wrapper ul li a {
+    /* top: 50%; */
+    font-size: 6rem;
+  }
+  .wrapper .social-media-icons {
+    bottom: 30%;
+  }
+
+  .wrapper .location {
+    bottom: 35%;
+  }
+  .wrapper .phone {
+    bottom: 43%;
+  }
+
+  .wrapper .email {
+    bottom: 48%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrapper ul {
+    top: 50%;
+  }
+
+  .wrapper ul li a {
+    /* top: 50%; */
+    font-size: 7rem;
+  }
+  .wrapper .social-media-icons {
+    bottom: 30%;
+  }
+
+  .wrapper .location {
+    bottom: 35%;
+  }
+  .wrapper .phone {
+    bottom: 43%;
+  }
+
+  .wrapper .email {
+    bottom: 48%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .wrapper .social-media-icons {
+    bottom: 33%;
+  }
+
+  .wrapper .location {
+    bottom: 38%;
+  }
+  .wrapper .phone {
+    bottom: 45%;
+  }
+
+  .wrapper .email {
+    bottom: 48%;
   }
 }
 </style>
