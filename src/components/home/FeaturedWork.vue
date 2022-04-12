@@ -13,28 +13,36 @@
           <img src="../../assets/BD.png" alt="" />
 
           <p>Orienteering APP</p>
-          <p class="additional-info">Know more</p>
+          <p @click="$router.push('/project-detail-1')" class="additional-info">
+            Know more
+          </p>
         </div>
       </el-col>
       <el-col class="science-parks" :sm="24" :md="14">
         <div class="img-container">
           <img src="../../assets/image-16.png" alt="" />
           <p>APP of Science P<span>arks</span></p>
-          <p class="additional-info">Know more</p>
+          <p @click="$router.push('/project-detail-3')" class="additional-info">
+            Know more
+          </p>
         </div>
       </el-col>
       <el-col class="dentist-app" :sm="24" :md="12">
         <div class="img-container">
           <img src="../../assets/DENTISTCLINIC.png" alt="" />
           <p>Dentist Clinic APP</p>
-          <p class="additional-info">Know more</p>
+          <p @click="$router.push('/project-detail-4')" class="additional-info">
+            Know more
+          </p>
         </div>
       </el-col>
       <el-col class="dentist-app-2" :sm="24" :md="12">
         <div class="img-container">
           <img src="../../assets/image-8.png" alt="" />
           <p>The Best Hotel Booking Sites</p>
-          <p class="additional-info">Know more</p>
+          <p @click="$router.push('/project-detail-5')" class="additional-info">
+            Know more
+          </p>
         </div>
       </el-col>
     </el-row>
@@ -132,6 +140,13 @@
   text-align: right;
   color: #111111;
   bottom: 3rem;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.featured-work .images p.additional-info:hover {
+  transform: translateY(-0.5rem);
+  color: grey;
 }
 
 .featured-work .images .science-parks {
@@ -154,6 +169,10 @@
   color: #111;
 }
 
+.featured-work .images .science-parks p.additional-info:hover {
+  color: grey;
+}
+
 .featured-work .images .dentist-app p {
   bottom: 3rem;
   right: 0rem;
@@ -163,6 +182,10 @@
   bottom: 1rem;
   right: 0rem;
   color: #111;
+}
+
+.featured-work .images .dentist-app p.additional-info:hover {
+  color: grey;
 }
 
 .featured-work .images .dentist-app-2 {
@@ -180,6 +203,10 @@
   bottom: 1.3rem;
   right: 0rem;
   color: #111;
+}
+
+.featured-work .images .dentist-app-2 p.additional-info:hover {
+  color: grey;
 }
 
 .featured-work .btn-readmore {
