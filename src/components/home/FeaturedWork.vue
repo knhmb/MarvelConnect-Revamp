@@ -4,23 +4,26 @@
     <el-row>
       <el-col>
         <h2>Featured Work</h2>
-        <p>Explore some of our finest projects.</p>
+        <p class="sub-title">Explore some of our finest projects.</p>
       </el-col>
     </el-row>
-    <el-row :gutter="40" class="images">
-      <el-col :sm="24" :md="10">
-        <div class="img-container">
-          <img src="../../assets/BD.png" alt="" />
+    <el-row :gutter="20" class="images">
+      <el-col :sm="24" :md="12">
+        <!-- <div class="img-container"> -->
+        <img
+          src="../../assets/female-doctor-using-mobile-phone-in-clinic-2021-09-04-14-28-19-ut-3.png"
+          alt=""
+        />
 
-          <p>Orienteering APP</p>
-          <p @click="$router.push('/project-detail-1')" class="additional-info">
-            Know more
-          </p>
-        </div>
+        <p>Orienteering APP</p>
+        <p @click="$router.push('/project-detail-1')" class="additional-info">
+          Know more
+        </p>
+        <!-- </div> -->
       </el-col>
-      <el-col class="science-parks" :sm="24" :md="14">
+      <el-col class="science-parks" :sm="24" :md="12">
         <div class="img-container">
-          <img src="../../assets/image-16.png" alt="" />
+          <img src="../../assets/image-16-2.png" alt="" />
           <p>APP of Science P<span>arks</span></p>
           <p @click="$router.push('/project-detail-3')" class="additional-info">
             Know more
@@ -81,7 +84,7 @@
   line-height: 2.25rem;
   letter-spacing: 0.018em;
   color: #111111;
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
 }
 
 .featured-work .images {
@@ -89,15 +92,15 @@
 }
 
 .featured-work .images .el-col {
-  position: relative;
+  /* position: relative; */
   /* width: 100%;
   height: 100%; */
   margin-bottom: 2rem;
 }
 
 .featured-work .img-container {
-  position: relative;
-  width: 80%;
+  /* position: relative; */
+  /* width: 80%; */
 }
 
 .featured-work .images img {
@@ -118,9 +121,9 @@
 }
 
 .featured-work .images p {
-  position: absolute;
-  bottom: 5rem;
-  right: 1rem;
+  /* position: absolute; */
+  /* bottom: 5rem;
+  right: 1rem; */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -139,7 +142,7 @@
   line-height: 2.25rem;
   text-align: right;
   color: #111111;
-  bottom: 3rem;
+  /* bottom: 3rem; */
   transition: 0.3s ease-out;
   cursor: pointer;
 }
@@ -150,13 +153,13 @@
 }
 
 .featured-work .images .science-parks {
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
 }
 
 .featured-work .images .science-parks p {
   bottom: 3rem;
   right: -3rem;
-  color: #fff;
+  color: #111;
 }
 
 .featured-work .images .science-parks p span {
@@ -189,7 +192,7 @@
 }
 
 .featured-work .images .dentist-app-2 {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .featured-work .images .dentist-app-2 p {
@@ -229,11 +232,14 @@
   .featured-work .img-container {
     width: 100%;
   }
+
+  .featured-work .sub-title {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .featured-work {
-    /* padding: 6rem 0rem; */
     text-align: center;
   }
 
@@ -247,15 +253,12 @@
   }
 
   .featured-work .images p {
-    position: absolute;
     bottom: 8rem;
     right: 1.5rem;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 3rem;
-    /* font-size: 28px;
-    line-height: 46px; */
     text-align: right;
     letter-spacing: -0.014em;
     color: #111111;
@@ -312,5 +315,5 @@
   .featured-work .images .dentist-app-2 {
     margin-top: 0;
   }
-}
+} */
 </style>
