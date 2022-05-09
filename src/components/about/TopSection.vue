@@ -5,10 +5,10 @@
         <el-col>
           <p>WHO WE ARE</p>
         </el-col>
-        <el-col :sm="24" :md="12">
-          <h4>A company that really focuses on innovation.</h4>
+        <el-col :sm="24" :md="17">
+          <h4>A company focuses on innovation.</h4>
         </el-col>
-        <el-col class="hidden-sm-and-down" :sm="24" :md="8" :offset="4">
+        <el-col class="hidden-sm-and-down" :sm="24" :md="4" :offset="3">
           <p>THE BEST IN THE FIELD</p>
         </el-col>
         <el-col class="hidden-md-and-up" :sm="24">
@@ -19,7 +19,7 @@
     <el-row>
       <el-col>
         <img
-          src="../../assets/businessmen-businesswomen-meeting-brainstorming-ideas-1.png"
+          src="../../assets/businessmen-businesswomen-meeting-brainstorming-ideas-1-1.png"
           alt=""
         />
       </el-col>
@@ -98,7 +98,7 @@ export default {
 }
 
 .about .about-top-section .el-row:nth-of-type(2) .el-col {
-  padding-left: 7rem;
+  /* padding-left: 7rem; */
 }
 
 .about .about-top-section .el-row:nth-of-type(2) img {

@@ -1,51 +1,59 @@
 <template>
   <section class="our-mission">
-    <base-container>
-      <el-row>
-        <el-col :sm="24" :lg="14">
-          <h4>
-            Our Mission and <br />
-            Vision.
-          </h4>
-        </el-col>
-        <el-col :sm="24" :lg="10">
-          <ul>
-            <li>
-              <h5>Thousands of Customers</h5>
-              <p>
-                We have always helped thousands of customers develop their
-                representative programming design.
-              </p>
-            </li>
-            <li>
-              <h5>Local Team with Best Products</h5>
-              <p>
-                Our development experts provide a tailor-made solution to our
-                customers.
-              </p>
-            </li>
-            <li>
-              <h5>Solutions from Customer’s View</h5>
-              <p>
-                Our experts in our development team help our customers solve the
-                problem and find the best solution.
-              </p>
-            </li>
-            <li>
-              <h5>Five Star Service</h5>
-              <p>
-                Excellent customer service is the surest way to greater success
-                for your organization. We make sure you realize value fast. We
-                guarantee that we will be at your service whenever you encounter
-                problems
-              </p>
-            </li>
-          </ul>
-        </el-col>
-      </el-row>
+    <!-- <base-container> -->
+    <el-row justify="space-between">
+      <el-col :sm="24" :md="12">
+        <h4>
+          Our Mission and <br />
+          Vision.
+        </h4>
 
-      <div class="circle"></div>
-    </base-container>
+        <img
+          src="../../assets/asia-businessmen-and-businesswomen-fist-bumping-ce-2021-09-01-12-09-58-utc-1.png"
+          alt=""
+        />
+        <div style="text-align: center">
+          <img class="dots" src="../../assets/Group-79.png" alt="" />
+        </div>
+      </el-col>
+      <el-col :sm="24" :md="10">
+        <ul>
+          <li>
+            <h5>Thousands of Customers</h5>
+            <p>
+              We have always helped thousands of customers develop their
+              representative programming design.
+            </p>
+          </li>
+          <li>
+            <h5>Local Team with Best Products</h5>
+            <p>
+              Our development experts provide a tailor-made solution to our
+              customers.
+            </p>
+          </li>
+          <li>
+            <h5>Solutions from Customer’s View</h5>
+            <p>
+              Our experts in our development team help our customers solve the
+              problem and find the best solution.
+            </p>
+          </li>
+          <li>
+            <h5>Five Star Service</h5>
+            <p>
+              Excellent customer service is the surest way to greater success
+              for your organization. We make sure you realize value fast. We
+              guarantee that we will be at your service whenever you encounter
+              problems
+            </p>
+          </li>
+        </ul>
+      </el-col>
+    </el-row>
+
+    <div class="circle"></div>
+    <!-- </base-container> -->
   </section>
 </template>
 
@@ -54,10 +62,18 @@
   padding: 7rem 0;
   position: relative;
   background: #f7f7f7;
-  background-image: url("../../assets/Ellipse-20-1.png");
+  /* background-image: url("../../assets/Ellipse-20-1.png");
   background-repeat: no-repeat;
   background-size: 57%;
-  background-position: center;
+  background-position: center; */
+}
+
+.our-mission .el-row {
+  /* align-items: center; */
+}
+
+.our-mission .el-row .el-col:nth-of-type(2) {
+  padding-right: 2rem;
 }
 
 .circle {
@@ -72,6 +88,19 @@
   line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
+  padding-left: 10rem;
+  margin-bottom: 3rem;
+}
+
+.our-mission img {
+  width: 100%;
+}
+
+.our-mission img.dots {
+  margin-top: 2em;
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .our-mission ul {
@@ -106,6 +135,17 @@
 @media screen and (max-width: 1199px) {
   .our-mission ul {
     margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .our-mission .el-row .el-col:nth-of-type(2) {
+    text-align: center;
+    padding-left: 2rem;
+  }
+
+  .our-mission img.dots {
+    margin: 3rem 0;
   }
 }
 

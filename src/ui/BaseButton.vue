@@ -1,5 +1,5 @@
 <template>
-  <div class="btn-content">
+  <div :class="{ 'is-centered': centered }" class="btn-content">
     <div class="btn"></div>
     <span :class="mode"><slot></slot></span>
     <el-icon><plus /></el-icon>
@@ -15,6 +15,11 @@ export default {
       type: String,
       required: false,
       default: null,
+    },
+    centered: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
   },
   components: {
@@ -32,6 +37,7 @@ export default {
   align-items: center;
   cursor: pointer;
   width: fit-content;
+  width: 100%;
 }
 .btn-content .btn {
   width: 2.8125rem;
@@ -67,6 +73,10 @@ export default {
 .btn-content .bold {
   font-weight: 700;
   font-family: Montserrat;
+}
+
+.btn-content.is-centered {
+  justify-content: center;
 }
 
 /* @media screen and (max-width: 900px) {

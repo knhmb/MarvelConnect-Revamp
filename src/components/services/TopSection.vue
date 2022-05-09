@@ -27,7 +27,7 @@
     <el-row>
       <el-col>
         <img
-          src="../../assets/software-developer-coding-javascript-laptop-computer-1.png"
+          src="../../assets/software-developer-coding-javascript-laptop-computer-1-2.png"
           alt=""
         />
       </el-col>

@@ -4,40 +4,40 @@
       <h4>Some of our partners</h4>
       <el-row :gutter="60">
         <el-col :sm="24" :md="12" :lg="8">
-          <img src="../../assets/pngwing-1.png" alt="" />
+          <img src="../../assets/logo01.png" alt="" />
         </el-col>
         <el-col :sm="24" :md="12" :lg="8">
-          <img src="../../assets/pngfind-1.png" alt="" />
+          <img src="../../assets/logo05.png" alt="" />
         </el-col>
         <el-col :sm="24" :md="12" :lg="8">
-          <img src="../../assets/Daco_5607561-1.png" alt="" />
+          <img src="../../assets/logo09.png" alt="" />
         </el-col>
         <el-col :sm="24" :md="12" :lg="8">
-          <img src="../../assets/image-17.png" alt="" />
+          <img src="../../assets/logo02.png" alt="" />
         </el-col>
         <el-col :sm="24" :md="12" :lg="8">
-          <img src="../../assets/image-15.png" alt="" />
+          <img src="../../assets/logo06.png" alt="" />
         </el-col>
         <el-col :sm="24" :md="12" :lg="8">
-          <img src="../../assets/image-16-1.png" alt="" />
+          <img src="../../assets/logo10.png" alt="" />
         </el-col>
         <el-col :sm="24" :md="12" :lg="8">
-          <img src="../../assets/HKU-removebg-preview-1.png" alt="" />
+          <img src="../../assets/logo03.png" alt="" />
         </el-col>
         <el-col :sm="24" :md="12" :lg="8">
-          <img src="../../assets/image-18.png" alt="" />
+          <img src="../../assets/logo07.png" alt="" />
         </el-col>
         <el-col :sm="24" :md="12" :lg="8">
-          <img src="../../assets/image-20.png" alt="" />
+          <img src="../../assets/logo11.png" alt="" />
         </el-col>
         <el-col :sm="24" :md="12" :lg="8">
-          <img src="../../assets/image-19.png" alt="" />
+          <img src="../../assets/logo04.png" alt="" />
         </el-col>
         <el-col :sm="24" :md="12" :lg="8">
-          <img src="../../assets/image-21.png" alt="" />
+          <img src="../../assets/logo08.png" alt="" />
         </el-col>
         <el-col :sm="24" :md="12" :lg="8">
-          <img src="../../assets/image-22.png" alt="" />
+          <img src="../../assets/logo12.png" alt="" />
         </el-col>
       </el-row>
     </base-container>

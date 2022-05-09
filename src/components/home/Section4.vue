@@ -1,52 +1,52 @@
 <template>
   <div class="section-4">
-    <el-row :gutter="20">
+    <el-row>
       <el-col class="p-10">
         <h4>WHAT WE DO</h4>
       </el-col>
       <el-col :sm="24" :md="12">
         <img src="../../assets/home-service01.jpg" alt="" />
       </el-col>
-      <el-col :sm="24" :md="10">
+      <el-col class="p-right-2" :sm="24" :md="10">
         <p class="title">Website Development</p>
         <p>
           We believed a well-designed website is essential for building a
           successful business image.
         </p>
-        <base-button>VIEW OUR SERVICES</base-button>
+        <base-button :centered="isActive">VIEW OUR SERVICES</base-button>
       </el-col>
     </el-row>
-    <el-row :gutter="20">
+    <el-row>
       <el-col class="p-10">
         <h4>WHAT WE DO</h4>
       </el-col>
       <el-col :sm="24" :md="12">
         <img src="../../assets/home-service02.jpg" alt="" />
       </el-col>
-      <el-col :sm="24" :md="10">
+      <el-col class="p-right-2" :sm="24" :md="10">
         <p class="title">Mobile apps</p>
         <p>
           For many years, we have adopted cutting-edge technologies in
           application development, from the traditional CGI, C, and Java to the
           popular PHP, Python, and JS.
         </p>
-        <base-button>VIEW OUR SERVICES</base-button>
+        <base-button :centered="isActive">VIEW OUR SERVICES</base-button>
       </el-col>
     </el-row>
-    <el-row :gutter="20">
+    <el-row>
       <el-col class="p-10">
         <h4>WHAT WE DO</h4>
       </el-col>
       <el-col :sm="24" :md="12">
         <img src="../../assets/home-service03.jpg" alt="" />
       </el-col>
-      <el-col :sm="24" :md="10">
+      <el-col class="p-right-2" :sm="24" :md="10">
         <p class="title">Digitization</p>
         <p>
           Through digitization, a business can achieve increased brand value,
           expand the client base, and best utilization of human resources.
         </p>
-        <base-button>VIEW OUR SERVICES</base-button>
+        <base-button :centered="isActive">VIEW OUR SERVICES</base-button>
       </el-col>
     </el-row>
   </div>
@@ -59,7 +59,27 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default {
-  methods: {},
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+      isActive: false,
+    };
+  },
+  watch: {
+    windowWidth(newWidth, oldWidth) {
+      console.log(newWidth);
+      console.log(oldWidth);
+      if (newWidth <= 991) {
+        this.isActive = true;
+        console.log("khaled");
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener("resize", () => {
+      this.windowWidth = window.innerWidth;
+    });
+  },
 };
 </script>
 
@@ -73,7 +93,7 @@ export default {
   margin-bottom: 15rem;
 }
 
-.section-4 .p-10 {
+.section-4 .p-10 h4 {
   margin-left: 18rem;
 }
 
@@ -118,13 +138,22 @@ export default {
   margin-bottom: 5rem;
 }
 
+.section-4 .el-col.p-right-2 {
+  padding: 0 2rem;
+}
 @media screen and (max-width: 991px) {
   .section-4 .el-row .el-col:last-of-type {
     padding: 0 10rem;
   }
 
-  .section-4 .el-col-offset-5 {
+  .section-4 .p-10 {
     margin: 0;
+    text-align: center;
+  }
+
+  .section-4 .el-col.p-right-2 {
+    padding: 0;
+    margin-top: 1.5rem;
     text-align: center;
   }
 }

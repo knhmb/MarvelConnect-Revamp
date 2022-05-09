@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 .projects .top-section {
-  padding: 3rem 0;
+  padding: 3rem 0 0 0;
   min-height: 100vh;
   position: relative;
 }

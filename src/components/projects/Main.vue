@@ -2,32 +2,55 @@
   <base-container>
     <section class="project-lists">
       <el-row :gutter="30">
-        <el-col :sm="24" :lg="12">
-          <img src="../../assets/BD.png" alt="" />
+        <el-col :sm="24" :md="12">
+          <img
+            src="../../assets/female-doctor-using-mobile-phone-in-clinic-2021-09-04-14-28-19-ut-3.png"
+            alt=""
+          />
           <div class="text">
             <p class="project-name">Orientation APP</p>
-            <p>International NGO</p>
+            <p>Know more</p>
           </div>
         </el-col>
-        <el-col :sm="24" :lg="12">
-          <img src="../../assets/unsplash_Ksgjx0tyuCY.png" alt="" />
+        <el-col :sm="24" :md="12">
+          <img src="../../assets/image-16-2.png" alt="" />
           <div class="text">
-            <p class="project-name">Website and App of Mass Transit System</p>
-            <p>Thailand Transit Company</p>
+            <p class="project-name">APP of Science Parks</p>
+            <p>Know more</p>
           </div>
         </el-col>
-        <el-col :sm="24" :lg="12">
-          <img src="../../assets/image-16.png" alt="" />
-          <div class="text">
-            <p class="project-name">Infrastructure APP</p>
-            <p>HK Public Corporation</p>
-          </div>
-        </el-col>
-        <el-col :sm="24" :lg="12">
+        <el-col :sm="24" :md="12">
           <img src="../../assets/DENTISTCLINIC.png" alt="" />
           <div class="text">
             <p class="project-name">Dentist Clinic APP</p>
-            <p>University in Hong Kong</p>
+            <p>Know more</p>
+          </div>
+        </el-col>
+        <el-col :sm="24" :md="12">
+          <img src="../../assets/image-8.png" alt="" />
+          <div class="text">
+            <p class="project-name">The Best Hotel Booking Sites</p>
+            <p>Know more</p>
+          </div>
+        </el-col>
+        <el-col :sm="24" :md="12">
+          <img
+            src="../../assets/bangkok-electric-train-at-sukhumvit-route-2021-08-26-15-29-22-utc-2.png"
+            alt=""
+          />
+          <div class="text">
+            <p class="project-name">Website and App of Mass Transit System</p>
+            <p>Know more</p>
+          </div>
+        </el-col>
+        <el-col :sm="24" :md="12">
+          <img
+            src="../../assets/software-developer-coding-javascript-laptop-computer-1-1.png"
+            alt=""
+          />
+          <div class="text">
+            <p class="project-name">More Projects</p>
+            <p>Committed to the Future</p>
           </div>
         </el-col>
       </el-row>
@@ -37,23 +60,22 @@
 
 <style scoped>
 .project-lists {
-  padding: 0 0 6rem 0;
+  /* padding: 0 0 6rem 0; */
+  margin-top: -10rem;
 }
 
 .project-lists .el-row .el-col {
-  margin-bottom: 9.5rem;
+  margin-bottom: 3rem;
   /* margin-bottom: -12rem; */
 }
 
 .project-lists .el-row .el-col:first-of-type img:first-child {
-  background: #fff;
-  padding: 3rem;
 }
 
 .project-lists .el-row .el-col img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  /* height: 100%; */
+  /* object-fit: contain; */
 }
 
 .project-lists .el-row .el-col p.project-name {
@@ -65,7 +87,7 @@
   text-align: right;
   letter-spacing: -0.014em;
   color: #111111;
-  margin-top: -3.5rem;
+  /* margin-top: -3.5rem; */
 }
 
 .project-lists .el-row .el-col p:nth-of-type(2) {
@@ -86,18 +108,18 @@
 /* Second Column */
 
 .project-lists .el-row .el-col:nth-child(2) img {
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 }
 
 .project-lists .el-row .el-col:nth-child(2) p.project-name {
-  color: #fff;
-  margin-top: -6.5rem;
+  color: #111;
+  /* margin-top: -6.5rem; */
 }
 
 /* Third Column */
 
 .project-lists .el-row .el-col:nth-child(3) p.project-name {
-  color: #fff;
+  color: #111;
 }
 
 .project-lists .el-row .el-col:nth-child(3) p:nth-of-type(2) {
@@ -105,10 +127,10 @@
 }
 
 .project-lists .el-row .el-col:nth-child(4) img {
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 }
 
-@media screen and (max-width: 1199px) {
+/* @media screen and (max-width: 1199px) {
   .project-lists .el-row .el-col:nth-child(4) img {
     margin-top: 0;
   }
@@ -120,15 +142,15 @@
   .project-lists .el-row .el-col:nth-of-type(2) p.project-name {
     margin-top: -3.5rem;
   }
-}
+} */
 
-@media screen and (max-width: 1069px) {
+/* @media screen and (max-width: 1069px) {
   .project-lists .el-row .el-col:nth-of-type(2) p.project-name {
     margin-top: -3.5rem;
   }
-}
+} */
 
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 750px) {
   .project-lists .el-row .el-col p.project-name {
     font-size: 3.5rem;
     line-height: 4rem;
@@ -143,11 +165,5 @@
     font-size: 2.6rem;
     line-height: 2.25rem;
   }
-}
-
-@media screen and (max-width: 399px) {
-  /* .project-lists .el-row .el-col p.project-name {
-    font-size: 1.75rem;
-  } */
-}
+} */
 </style>
