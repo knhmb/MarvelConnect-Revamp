@@ -13,7 +13,10 @@
             <Form />
           </el-col>
           <el-col :sm="24" :md="12">
-            <img src="../../assets/unsplash_EcELKgw7NwM.png" alt="" />
+            <img
+              src="../../assets/an-envelope-symbol-on-a-wooden-cube-on-a-computer-2021-08-29-07-16-53-utc-1.png"
+              alt=""
+            />
           </el-col>
         </el-row>
       </div>
@@ -88,11 +91,12 @@ export default {
 
 .contact-us .contact-top-section .el-row {
   margin-top: 3rem;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .contact-us .contact-top-section img {
   width: 100%;
+  margin-top: 3rem;
 }
 
 @media screen and (max-width: 750px) {

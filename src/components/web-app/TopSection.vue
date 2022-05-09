@@ -2,35 +2,39 @@
   <section class="web-app-top-section sidebar-menu">
     <img class="circular" src="../../assets/Subtract.png" alt="" />
     <img class="dotted" src="../../assets/Group-79.png" alt="" />
-    <p class="p1">WHAT WE DO</p>
-    <p class="p2">SCROLL</p>
-    <!-- <base-container> -->
-    <el-row>
-      <el-col>
-        <p>Service</p>
-      </el-col>
-      <el-col :sm="24" :md="11">
-        <h4>Website and App Development</h4>
-      </el-col>
-      <el-col :sm="24" :md="13">
-        <img
-          src="../../assets/website-html-code-browser-view-printed-white-paper-closeup-view-1.png"
-          alt=""
-        />
-        <div class="blog-text">
-          <p>
-            We started to help clients to develop various applications since the
-            rise of CGI technology.
-          </p>
-          <p>
-            For many years, we have adopted cutting-edge technologies in
-            application development, from the traditional CGI, C and Java to the
-            popular PHP, Python, and JS.
-          </p>
-        </div>
-      </el-col>
-    </el-row>
-    <!-- </base-container> -->
+    <p class="p1">Services</p>
+    <base-container>
+      <el-row justify="space-between">
+        <el-col>
+          <p>Service</p>
+        </el-col>
+        <el-col :sm="24" :md="10">
+          <h4>
+            Website and <br />
+            App <br />
+            Development
+          </h4>
+        </el-col>
+        <el-col :sm="24" :md="13">
+          <img
+            class="mt"
+            src="../../assets/programmer-outsource-developer-team-coding-technol-2021-08-31-21-57-04-utc-1.png"
+            alt=""
+          />
+          <div class="blog-text">
+            <p>
+              We started to help clients to develop various applications since
+              the rise of CGI technology.
+            </p>
+            <p>
+              For many years, we have adopted cutting-edge technologies in
+              application development, from the traditional CGI, C and Java to
+              the popular PHP, Python, and JS.
+            </p>
+          </div>
+        </el-col>
+      </el-row>
+    </base-container>
   </section>
 </template>
 
@@ -66,7 +70,7 @@ export default {
 
 .web-app .web-app-top-section .el-col:first-of-type,
 .web-app .web-app-top-section .el-col:nth-of-type(2) {
-  padding-left: 10rem;
+  /* padding-left: 10rem; */
 }
 
 .web-app .web-app-top-section img.circular {
@@ -92,8 +96,8 @@ export default {
   color: #111111;
   position: absolute;
   transform: rotate(90deg);
-  right: 0;
-  top: 30%;
+  right: 5.5rem;
+  top: 34%;
   z-index: 1;
 }
 .web-app .web-app-top-section p.p2 {
@@ -138,12 +142,13 @@ export default {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 4.375rem;
+  font-size: 4rem;
   line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   z-index: 1;
+  /* word-break: break-word; */
   position: relative;
 }
 
@@ -152,9 +157,13 @@ export default {
   margin-top: 3rem;
 }
 
+.web-app .web-app-top-section img.mt {
+  margin-top: 9rem;
+}
+
 .web-app .web-app-top-section .el-col:nth-of-type(3) .blog-text {
-  margin: 3rem 2rem;
-  padding: 0 10rem;
+  margin: 3rem 0;
+  /* padding: 0 10rem; */
 }
 
 .web-app .web-app-top-section .el-col:nth-of-type(3) p:first-of-type {

@@ -1,7 +1,7 @@
 <template>
   <section class="blog">
     <base-container>
-      <el-row>
+      <el-row justify="space-between">
         <el-col :sm="24" :md="7">
           <ul>
             <li>Blog/Article promotion</li>
@@ -9,7 +9,11 @@
             <li>Advertorial Writing</li>
           </ul>
         </el-col>
-        <el-col :sm="24" :md="17">
+        <el-col :sm="24" :md="15">
+          <img
+            src="../../assets/working-at-home-with-computer-woman-writing-a-blo-2021-10-06-22-04-48-utc-1.png"
+            alt=""
+          />
           <p>
             The company owns media brands HKITBLOG, Business Development Manager
             at Marvelconnect says: “We have received supports from many
@@ -25,7 +29,7 @@
           </p>
         </el-col>
         <el-col>
-          <base-button :mode="'bold'">LET’S TALK</base-button>
+          <base-button centered :mode="'bold'">LET’S TALK</base-button>
         </el-col>
       </el-row>
     </base-container>
@@ -58,6 +62,10 @@
   margin-right: 1rem;
 }
 
+.media .blog img {
+  width: 100%;
+}
+
 .media .blog p {
   font-family: "Abel";
   font-style: normal;
@@ -69,7 +77,7 @@
 }
 
 .media .blog p:first-of-type {
-  margin-top: 7rem;
+  margin-top: 1rem;
 }
 
 .media .blog .el-col:last-of-type {

@@ -13,7 +13,7 @@
           <h4>Media</h4>
         </el-col>
         <el-col :sm="24" :md="12">
-          <img src="../../assets/online-blog-1.png" alt="" />
+          <img class="mt" src="../../assets/online-blog-1-1.png" alt="" />
           <div class="blog-text">
             <p>Over 10 years of experience in online media</p>
             <p>
@@ -138,8 +138,13 @@ export default {
   margin-top: 3rem;
 }
 
+.media .media-top-section img.mt {
+  margin-top: 6rem;
+}
+
 .media .media-top-section .el-col:nth-of-type(3) .blog-text {
-  margin: 3rem 2rem;
+  /* margin: 3rem 2rem; */
+  margin: 3rem 0;
 }
 
 .media .media-top-section .el-col:nth-of-type(3) p:first-of-type {

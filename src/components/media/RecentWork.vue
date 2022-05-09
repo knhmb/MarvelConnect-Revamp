@@ -3,13 +3,16 @@
     <base-container>
       <h4>Recent work</h4>
       <el-row :gutter="20">
-        <el-col :sm="24" :lg="8">
-          <img src="../../assets/BD.png" alt="" />
+        <el-col :sm="24" :md="12">
+          <img
+            src="../../assets/female-doctor-using-mobile-phone-in-clinic-2021-09-04-14-28-19-ut-3.png"
+            alt=""
+          />
           <p>Orienteering APP</p>
           <p>Know more</p>
         </el-col>
-        <el-col :sm="24" :lg="16">
-          <img src="../../assets/DENTISTCLINIC.png" alt="" />
+        <el-col :sm="24" :md="12">
+          <img src="../../assets/image-16-2.png" alt="" />
           <p>Dentist Clinic APP</p>
           <p>Know more</p>
         </el-col>
@@ -40,7 +43,7 @@
 }
 
 .recent-work img {
-  width: 85%;
+  width: 100%;
 }
 
 .recent-work p:first-of-type {
@@ -52,11 +55,7 @@
   text-align: right;
   letter-spacing: -0.014em;
   color: #111111;
-  margin-top: -5.5rem;
-  /* margin-left: 2rem; */
-  /* position: absolute;
-  bottom: 3rem;
-  right: -4rem; */
+  /* margin-top: -5.5rem; */
 }
 
 .recent-work p:nth-of-type(2) {
@@ -67,43 +66,25 @@
   line-height: 2.25rem;
   text-align: right;
   color: #111111;
-  /* margin-left: 8rem; */
 }
 
-.recent-work .el-col:nth-of-type(2) {
-  margin-top: 21rem;
-}
-
-.recent-work .el-col:nth-of-type(2) p:first-of-type {
-  margin-right: 2.5rem;
+/* .recent-work .el-col:nth-of-type(2) p:first-of-type {
+  margin-right: 3rem;
 }
 
 .recent-work .el-col:nth-of-type(2) p:nth-of-type(2) {
   margin-right: 2rem;
-}
-
-@media screen and (max-width: 1199px) {
-  .recent-work .el-col:nth-of-type(2) {
-    margin-top: 5rem;
-  }
-}
+} */
 
 @media screen and (max-width: 750px) {
   .recent-work p:first-of-type {
-    /* font-size: 28px; */
     font-size: 4rem;
-    margin-top: -7.5rem;
-  }
-
-  .recent-work .el-col:nth-of-type(2) p:first-of-type {
-    /* font-size: 28px; */
-    margin-top: -4rem;
+    margin-top: 1.5rem;
   }
 
   .recent-work p:nth-of-type(2) {
     font-size: 2rem;
     line-height: 4rem;
-    /* margin-left: 8rem; */
   }
 }
 </style>
