@@ -1,6 +1,10 @@
 <template>
   <!-- <transition appear @before-enter="beforeEnter" @enter="enter"> -->
   <header>
+    <img class="circle" src="../../assets/Subtract.png" alt="" />
+    <img class="shot-logo" src="../../assets/shot-logo.png" alt="" />
+    <img class="dots-right" src="../../assets/Group-31.png" alt="" />
+    <img class="dots-bottom" src="../../assets/Group-20.png" alt="" />
     <div class="header-content">
       <el-row class="row-head">
         <el-col :span="12">
@@ -48,7 +52,10 @@
         <el-col>
           <p class="marvel">WE ARE MARVELCONNECT</p>
           <div class="inner-body-content">
-            <h2>A digital agency focus on innovation.</h2>
+            <h2>
+              A digital agency <br />
+              focus on innovation.
+            </h2>
             <p>
               MANKIND IS GREAT BECAUSE OF DREAMS <br />
               APPS/website/AI/Machine Learning/Big Data/Iot
@@ -176,6 +183,35 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+}
+
+header img.circle {
+  position: absolute;
+  width: 53%;
+  right: 3rem;
+  top: 0;
+}
+header img.shot-logo {
+  position: absolute;
+  width: 20%;
+  right: 13rem;
+  bottom: 7rem;
+}
+header img.dots-right {
+  position: absolute;
+  width: 3%;
+  right: 9rem;
+  top: 22.5rem;
+}
+header img.dots-bottom {
+  position: absolute;
+  width: 3%;
+  right: 40%;
+  bottom: 3rem;
+}
+
+.header-content {
+  position: relative;
 }
 
 .header-content .open.nav {
