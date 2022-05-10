@@ -3,8 +3,8 @@
     <the-header></the-header>
     <top-section></top-section>
     <Challenge />
-    <Experience />
-    <Feedback />
+    <!-- <Experience />
+    <Feedback /> -->
     <more-work></more-work>
     <work-together></work-together>
   </section>
@@ -14,8 +14,8 @@
 import TheHeader from "../components/common/TheHeader.vue";
 import TopSection from "../components/project-detail-1/TopSection.vue";
 import Challenge from "../components/project-detail-1/Challenge.vue";
-import Experience from "../components/project-detail-1/Experience.vue";
-import Feedback from "../components/project-detail-1/Feedback.vue";
+// import Experience from "../components/project-detail-1/Experience.vue";
+// import Feedback from "../components/project-detail-1/Feedback.vue";
 import MoreWork from "../components/project-detail-1/MoreWork.vue";
 import WorkTogether from "../components/project-detail-1/WorkTogether.vue";
 
@@ -24,8 +24,8 @@ export default {
     TheHeader,
     TopSection,
     Challenge,
-    Experience,
-    Feedback,
+    // Experience,
+    // Feedback,
     MoreWork,
     WorkTogether,
   },
