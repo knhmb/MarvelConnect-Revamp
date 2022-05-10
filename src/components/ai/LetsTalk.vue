@@ -1,7 +1,7 @@
 <template>
   <section class="blog">
     <base-container>
-      <el-row>
+      <el-row justify="space-between">
         <el-col :sm="24" :md="8">
           <ul>
             <li>User behavior analysis</li>
@@ -11,7 +11,11 @@
           </ul>
         </el-col>
 
-        <el-col :sm="24" :md="16">
+        <el-col :sm="24" :md="15">
+          <img
+            src="../../assets/smartphone-artificial-intelligence-futuristic-com-2021-12-09-21-02-19-utc-1.png"
+            alt=""
+          />
           <p>
             Case study: Watch retailer with over 50 years of experience Each
             tourbillon watch has a story behind it, just like human souls, it
@@ -30,7 +34,7 @@
           </p>
         </el-col>
         <el-col>
-          <base-button :mode="'bold'">LET’S TALK</base-button>
+          <base-button centered :mode="'bold'">LET’S TALK</base-button>
         </el-col>
       </el-row>
     </base-container>
@@ -54,13 +58,17 @@
   font-size: 1.75rem;
   line-height: 2.25rem;
   color: #111111;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .ai .blog li::before {
   content: "+";
   color: #0de9f6;
   margin-right: 1rem;
+}
+
+.ai .blog img {
+  width: 100%;
 }
 
 .ai .blog p {
@@ -74,7 +82,7 @@
 }
 
 .ai .blog p:first-of-type {
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 
 .ai .blog .el-col:last-of-type {

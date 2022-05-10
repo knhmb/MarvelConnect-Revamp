@@ -2,19 +2,19 @@
   <section class="iot-top-section sidebar-menu">
     <img class="circular" src="../../assets/Subtract.png" alt="" />
     <img class="dotted" src="../../assets/Group-79.png" alt="" />
-    <p class="p1">WHAT WE DO</p>
-    <p class="p2">SCROLL</p>
+    <p class="p1">SERVICES</p>
+    <!-- <p class="p2">SCROLL</p> -->
     <base-container>
-      <el-row>
+      <el-row justify="space-between">
         <el-col>
           <p>Service</p>
         </el-col>
-        <el-col :sm="24" :md="12">
+        <el-col :sm="24" :md="10">
           <h4>Internet of Things(IoT)</h4>
         </el-col>
-        <el-col :sm="24" :md="12">
+        <el-col :sm="24" :md="13">
           <img
-            src="../../assets/internet-things-communication-technology-1.png"
+            src="../../assets/internet-things-communication-technology-1-1.png"
             alt=""
           />
           <div class="blog-text">
@@ -86,8 +86,8 @@ export default {
   color: #111111;
   position: absolute;
   transform: rotate(90deg);
-  right: 0;
-  top: 30%;
+  right: 5.5rem;
+  top: 26%;
 }
 .iot .iot-top-section p.p2 {
   font-family: "Abel";
@@ -144,7 +144,7 @@ export default {
 }
 
 .iot .iot-top-section .el-col:nth-of-type(3) .blog-text {
-  margin: 3rem 2rem;
+  margin: 3rem 0;
 }
 
 .iot .iot-top-section .el-col:nth-of-type(3) p:first-of-type {

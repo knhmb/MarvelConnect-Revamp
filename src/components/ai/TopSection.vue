@@ -2,8 +2,8 @@
   <section class="ai-top-section sidebar-menu">
     <img class="circular" src="../../assets/Subtract.png" alt="" />
     <img class="dotted" src="../../assets/Group-79.png" alt="" />
-    <p class="p1">WHAT WE DO</p>
-    <p class="p2">SCROLL</p>
+    <p class="p1">SERVICES</p>
+    <!-- <p class="p2">SCROLL</p> -->
     <base-container>
       <el-row>
         <el-col>
@@ -14,7 +14,7 @@
         </el-col>
         <el-col :sm="24" :md="12">
           <img
-            src="../../assets/circuit-board-and-ai-micro-processor-artificial-i-2021-09-03-22-56-18-utc-1.png"
+            src="../../assets/circuit-board-and-ai-micro-processor-artificial-i-2021-09-03-22-56-18-utc-1-1.png"
             alt=""
           />
           <div class="blog-text">
@@ -89,8 +89,8 @@ export default {
   color: #111111;
   position: absolute;
   transform: rotate(90deg);
-  right: 0;
-  top: 30%;
+  right: 5.5rem;
+  top: 26%;
 }
 .ai .ai-top-section p.p2 {
   font-family: "Abel";

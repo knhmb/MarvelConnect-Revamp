@@ -1,7 +1,7 @@
 <template>
   <section class="lets-talk-writing">
     <base-container>
-      <el-row :gutter="20">
+      <el-row justify="space-between">
         <el-col :sm="24" :md="10">
           <ul>
             <li>SEO Writing/translation</li>
@@ -11,7 +11,11 @@
             <li>Press Release Writing for Product</li>
           </ul>
         </el-col>
-        <el-col :sm="24" :md="14">
+        <el-col :sm="24" :md="13">
+          <img
+            src="../../assets/businesswoman-hands-writing-to-notebook-at-office-2021-08-26-22-49-03-utc-1.png"
+            alt=""
+          />
           <p>
             Marvelconnect has years of writing and editing experience and
             received support and trust from many clients. We have provided over
@@ -22,7 +26,7 @@
           </p>
         </el-col>
         <el-col>
-          <base-button :mode="'bold'">LET’S TALK</base-button>
+          <base-button centered :mode="'bold'">LET’S TALK</base-button>
         </el-col>
       </el-row>
     </base-container>
@@ -53,6 +57,10 @@
   content: "+";
   color: #0de9f6;
   margin-right: 1rem;
+}
+
+.writing .lets-talk-writing img {
+  width: 100%;
 }
 
 .writing .lets-talk-writing p {

@@ -1,7 +1,7 @@
 <template>
   <section class="blog">
     <base-container>
-      <el-row>
+      <el-row justify="space-between">
         <el-col :sm="24" :md="8">
           <ul>
             <li>Device’s connection</li>
@@ -10,7 +10,11 @@
             <li>Data Analysis</li>
           </ul>
         </el-col>
-        <el-col :sm="24" :md="16">
+        <el-col :sm="24" :md="15">
+          <img
+            src="../../assets/smart-home-software-on-digital-tablet-screen-clos-2021-09-04-09-32-26-utc-1.png"
+            alt=""
+          />
           <p>
             The term "Internet of Things" refers to the various methods by which
             tangible or intangible objects are connected in order to provide new
@@ -27,7 +31,7 @@
           </p>
         </el-col>
         <el-col>
-          <base-button :mode="'bold'">LET’S TALK</base-button>
+          <base-button centered :mode="'bold'">LET’S TALK</base-button>
         </el-col>
       </el-row>
     </base-container>
@@ -60,6 +64,10 @@
   margin-right: 1rem;
 }
 
+.iot .blog img {
+  width: 100%;
+}
+
 .iot .blog p {
   font-family: "Abel";
   font-style: normal;
@@ -71,7 +79,7 @@
 }
 
 .iot .blog p:first-of-type {
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 
 .iot .blog .el-col:last-of-type {

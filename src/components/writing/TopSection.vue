@@ -2,34 +2,34 @@
   <section class="writing-top-section sidebar-menu">
     <img class="circular" src="../../assets/Subtract.png" alt="" />
     <img class="dotted" src="../../assets/Group-79.png" alt="" />
-    <p class="p1">WHAT WE DO</p>
-    <p class="p2">SCROLL</p>
-    <!-- <base-container> -->
-    <el-row>
-      <el-col>
-        <p>Service</p>
-      </el-col>
-      <el-col :sm="24" :md="11">
-        <h4>Translation and Press Release Writing</h4>
-      </el-col>
-      <el-col :sm="24" :md="13">
-        <img
-          src="../../assets/photo-old-typewriter-wooden-table-sunset-light-retro-look-1.png"
-          alt=""
-        />
-        <div class="blog-text">
-          <p>
-            A decent press release can be an excellent addition to your
-            marketing strategy.
-          </p>
-          <p>
-            Marvelconnect has years of writing and editing experience and
-            received support and trust from many clients.
-          </p>
-        </div>
-      </el-col>
-    </el-row>
-    <!-- </base-container> -->
+    <p class="p1">SERVICES</p>
+    <!-- <p class="p2">SCROLL</p> -->
+    <base-container>
+      <el-row>
+        <el-col>
+          <p>Service</p>
+        </el-col>
+        <el-col :sm="24" :md="11">
+          <h4>Translation and Press Release Writing</h4>
+        </el-col>
+        <el-col :sm="24" :md="13">
+          <img
+            src="../../assets/photo-old-typewriter-wooden-table-sunset-light-retro-look-1-1.png"
+            alt=""
+          />
+          <div class="blog-text">
+            <p>
+              A decent press release can be an excellent addition to your
+              marketing strategy.
+            </p>
+            <p>
+              Marvelconnect has years of writing and editing experience and
+              received support and trust from many clients.
+            </p>
+          </div>
+        </el-col>
+      </el-row>
+    </base-container>
   </section>
 </template>
 
@@ -64,10 +64,10 @@ export default {
   /* overflow: hidden; */
 }
 
-.writing .writing-top-section .el-col:first-of-type,
+/* .writing .writing-top-section .el-col:first-of-type,
 .writing .writing-top-section .el-col:nth-of-type(2) {
   padding-left: 10rem;
-}
+} */
 
 .writing .writing-top-section img.circular {
   position: absolute;
@@ -92,8 +92,8 @@ export default {
   color: #111111;
   position: absolute;
   transform: rotate(90deg);
-  right: 0;
-  top: 30%;
+  right: 5.5rem;
+  top: 26%;
   z-index: 1;
 }
 .writing .writing-top-section p.p2 {
@@ -154,7 +154,7 @@ export default {
 
 .writing .writing-top-section .el-col:nth-of-type(3) .blog-text {
   margin: 3rem 2rem;
-  padding: 0 10rem;
+  /* padding: 0 10rem; */
 }
 
 .writing .writing-top-section .el-col:nth-of-type(3) p:first-of-type {

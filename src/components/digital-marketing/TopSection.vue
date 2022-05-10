@@ -2,35 +2,35 @@
   <section class="digital-marketing-top-section sidebar-menu">
     <img class="circular" src="../../assets/Subtract.png" alt="" />
     <img class="dotted" src="../../assets/Group-79.png" alt="" />
-    <p class="p1">WHAT WE DO</p>
-    <p class="p2">SCROLL</p>
-    <!-- <base-container> -->
-    <el-row>
-      <el-col>
-        <p>Service</p>
-      </el-col>
-      <el-col :sm="24" :md="11">
-        <h4>Digital Marketing</h4>
-      </el-col>
-      <el-col :sm="24" :md="13">
-        <img
-          src="../../assets/businesspeople-working-finance-accounting-analyze-financi-1-1.png"
-          alt=""
-        />
-        <div class="blog-text">
-          <p>
-            Digital marketing is one of the essential elements for companies to
-            boost their business and sales.
-          </p>
-          <p>
-            For many years, we have adopted cutting-edge technologies in
-            application development, from the traditional CGI, C and Java to the
-            popular PHP, Python, and JS.
-          </p>
-        </div>
-      </el-col>
-    </el-row>
-    <!-- </base-container> -->
+    <p class="p1">SERVICES</p>
+    <!-- <p class="p2">SCROLL</p> -->
+    <base-container>
+      <el-row>
+        <el-col>
+          <p>Service</p>
+        </el-col>
+        <el-col :sm="24" :md="10">
+          <h4>Digital Marketing</h4>
+        </el-col>
+        <el-col :sm="24" :md="14">
+          <img
+            src="../../assets/african-man-working-on-laptop-in-cafe-digital-mar-2021-08-29-17-48-11-utc-1.png"
+            alt=""
+          />
+          <div class="blog-text">
+            <p>
+              Digital marketing is one of the essential elements for companies
+              to boost their business and sales.
+            </p>
+            <p>
+              For many years, we have adopted cutting-edge technologies in
+              application development, from the traditional CGI, C and Java to
+              the popular PHP, Python, and JS.
+            </p>
+          </div>
+        </el-col>
+      </el-row>
+    </base-container>
   </section>
 </template>
 
@@ -65,10 +65,10 @@ export default {
   /* overflow: hidden; */
 }
 
-.digital-marketing .digital-marketing-top-section .el-col:first-of-type,
+/* .digital-marketing .digital-marketing-top-section .el-col:first-of-type,
 .digital-marketing .digital-marketing-top-section .el-col:nth-of-type(2) {
   padding-left: 10rem;
-}
+} */
 
 .digital-marketing .digital-marketing-top-section img.circular {
   position: absolute;
@@ -93,8 +93,8 @@ export default {
   color: #111111;
   position: absolute;
   transform: rotate(90deg);
-  right: 0;
-  top: 30%;
+  right: 5.5rem;
+  top: 26%;
   z-index: 1;
 }
 .digital-marketing .digital-marketing-top-section p.p2 {
@@ -157,8 +157,8 @@ export default {
   .digital-marketing-top-section
   .el-col:nth-of-type(3)
   .blog-text {
-  margin: 3rem 2rem;
-  padding: 0 10rem;
+  margin: 3rem 0;
+  /* padding: 0 10rem; */
 }
 
 .digital-marketing
