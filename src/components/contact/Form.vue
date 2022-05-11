@@ -97,6 +97,10 @@ export default {
   color: #fff;
 }
 
+.contact-form .el-form .el-form-item .el-input_wrapper {
+  padding: 0;
+}
+
 @media screen and (max-width: 750px) {
   .contact-form .el-form .el-form-item .el-input__inner::placeholder,
   .contact-form .el-form .el-form-item .el-textarea__inner::placeholder {
