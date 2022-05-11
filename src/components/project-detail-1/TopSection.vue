@@ -92,6 +92,7 @@ export default {
 .project-detail-1 .project-detail-1-top-section {
   padding: 3rem 0;
   position: relative;
+  background-color: #e6e6e6;
   /* overflow: hidden; */
 }
 
@@ -166,7 +167,7 @@ export default {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.8rem;
   line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
@@ -183,6 +184,10 @@ export default {
 .project-detail-1 .project-detail-1-top-section img.right-img {
   width: 100%;
   margin: 7rem 0;
+}
+
+.project-detail-1 .project-detail-1-top-section .el-col:first-of-type p {
+  margin-left: 8rem;
 }
 
 .project-detail-1 .project-detail-1-top-section .el-col:nth-of-type(2) p,

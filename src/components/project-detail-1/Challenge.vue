@@ -87,7 +87,7 @@
 
 <style scoped>
 .challenge {
-  padding: 3rem 0;
+  padding: 10rem 0;
   background: #e6e6e6;
 }
 

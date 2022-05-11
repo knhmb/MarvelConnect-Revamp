@@ -21,7 +21,8 @@
 <style scoped>
 .feedback {
   padding: 3rem 0;
-  background: #fff;
+  /* background: #fff; */
+  background-color: #e6e6e6;
 }
 
 .feedback h4 {

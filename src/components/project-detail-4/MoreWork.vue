@@ -1,21 +1,24 @@
 <template>
   <section class="more-work">
     <base-container>
-      <h4>More Work</h4>
-      <el-row justify="space-between">
+      <h4>More Works...</h4>
+      <el-row :gutter="30">
         <el-col :span="12">
-          <div class="img-content">
-            <img src="../../assets/BD.png" alt="" />
-            <p>Orienteering APP</p>
-            <p>Know More</p>
-          </div>
+          <!-- <div class="img-content"> -->
+          <img
+            src="../../assets/female-doctor-using-mobile-phone-in-clinic-2021-09-04-14-28-19-ut-3.png"
+            alt=""
+          />
+          <p>Orienteering APP</p>
+          <p>Know More</p>
+          <!-- </div> -->
         </el-col>
         <el-col :span="12">
-          <div class="img-content">
-            <img src="../../assets/image-16.png" alt="" />
-            <p>APP of Science P<span>arks</span></p>
-            <p>Know More</p>
-          </div>
+          <!-- <div class="img-content"> -->
+          <img src="../../assets/image-16-2.png" alt="" />
+          <p>APP of Science P<span>arks</span></p>
+          <p>Know More</p>
+          <!-- </div> -->
         </el-col>
       </el-row>
     </base-container>
@@ -24,7 +27,7 @@
 
 <style scoped>
 .more-work {
-  padding: 3rem 0 0 0;
+  padding: 3rem 0 4rem 0;
 }
 
 .more-work .el-col {
@@ -40,38 +43,39 @@
   letter-spacing: -0.005em;
   color: #111111;
   margin-bottom: 4rem;
+  text-decoration-line: underline;
 }
 
-.more-work .img-content {
+/* .more-work .img-content {
   height: 60%;
   position: relative;
-}
+} */
 
 .more-work img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  /* height: 100%; */
+  /* object-fit: contain; */
 }
 
-.more-work .el-col:first-of-type p:first-of-type {
+/* .more-work .el-col:first-of-type p:first-of-type {
   left: 9rem;
 }
 .more-work .el-col:first-of-type p:nth-of-type(2) {
   right: 6rem;
-}
+} */
 
-.more-work .el-col:nth-of-type(2) p:first-of-type {
+/* .more-work .el-col:nth-of-type(2) p:first-of-type {
   right: -2.6rem;
   color: #fff;
-}
+} */
 
 .more-work .el-col:nth-of-type(2) p:first-of-type span {
   color: #111;
 }
 
-.more-work .el-col:nth-of-type(2) p:nth-of-type(2) {
+/* .more-work .el-col:nth-of-type(2) p:nth-of-type(2) {
   right: -3rem;
-}
+} */
 
 .more-work p:first-of-type {
   font-family: "Montserrat";
@@ -82,8 +86,6 @@
   text-align: right;
   letter-spacing: -0.014em;
   color: #111111;
-  position: absolute;
-  bottom: 3.5rem;
 }
 
 .more-work p:nth-of-type(2) {
@@ -94,8 +96,6 @@
   line-height: 2.25rem;
   text-align: right;
   color: #111111;
-  position: absolute;
-  bottom: 1.5rem;
 }
 
 @media screen and (max-width: 722px) {

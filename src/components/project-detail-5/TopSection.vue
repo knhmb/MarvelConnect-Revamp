@@ -2,14 +2,14 @@
   <section class="project-detail-5-top-section sidebar-menu">
     <img class="circular" src="../../assets/Subtract.png" alt="" />
     <img class="dotted" src="../../assets/Group-79.png" alt="" />
-    <p class="p1">WHAT WE DO</p>
-    <p class="p2">SCROLL</p>
+    <p class="p1">CASE STUDIES</p>
+    <!-- <p class="p2">SCROLL</p> -->
     <base-container>
       <el-row>
         <el-col>
           <p>CASE STUDY</p>
         </el-col>
-        <el-col :sm="24" :md="12">
+        <el-col :sm="24" :md="11">
           <h4>The Best Hotel Booking Sites</h4>
           <p>SERVICE</p>
           <p>Website design, Data analysis, AI/machine learning</p>
@@ -21,10 +21,8 @@
             <li>Operational report</li>
           </ul>
         </el-col>
-        <el-col :sm="24" :md="12">
-          <img class="right-img" src="../../assets/image-8-2.png" alt="" />
-        </el-col>
-        <el-col :sm="24" :md="12" :offset="8">
+        <el-col :sm="24" :md="13">
+          <img class="right-img" src="../../assets/image-8-3.png" alt="" />
           <div class="blog-text">
             <p>About the client</p>
             <p>
@@ -39,7 +37,8 @@
   <section class="project-detail-5-img">
     <el-row>
       <el-col>
-        <img src="../../assets/hotel-room-luxury-resort-1-1.png" alt="" />
+        <img src="../../assets/hotel-room-luxury-resort-1-1-1.png" alt="" />
+        <p>Simplify All-in-One Management of Hotel</p>
       </el-col>
     </el-row>
   </section>
@@ -72,15 +71,12 @@ export default {
 .project-detail-5 .project-detail-5-top-section {
   padding: 3rem 0;
   position: relative;
+  background-color: #e6e6e6;
   /* overflow: hidden; */
 }
 
-/* .project-detail-5 .project-detail-5-top-section .el-col {
-  margin-bottom: 3rem;
-} */
-
-.project-detail-5 .project-detail-5-top-section .blog-text {
-  margin-top: 4rem;
+.project-detail-5 .project-detail-5-top-section .el-col {
+  /* height: 60%; */
 }
 
 .project-detail-5 .project-detail-5-top-section img.circular {
@@ -106,8 +102,8 @@ export default {
   color: #111111;
   position: absolute;
   transform: rotate(90deg);
-  right: 0;
-  top: 30%;
+  right: 3rem;
+  top: 33%;
 }
 .project-detail-5 .project-detail-5-top-section p.p2 {
   font-family: "Abel";
@@ -150,11 +146,11 @@ export default {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 4.375rem;
+  font-size: 3.7rem;
   line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
-  margin-left: -3rem;
+  margin-left: 1rem;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -166,9 +162,11 @@ export default {
 
 .project-detail-5 .project-detail-5-top-section img.right-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-top: 0;
+  margin: 7rem 0;
+}
+
+.project-detail-5 .project-detail-5-top-section .el-col:first-of-type p {
+  margin-left: 8rem;
 }
 
 .project-detail-5 .project-detail-5-top-section .el-col:nth-of-type(2) p,
@@ -193,6 +191,7 @@ export default {
   letter-spacing: 0.2em;
   color: #111111;
   margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .project-detail-5
@@ -206,6 +205,7 @@ export default {
   line-height: 120%;
   letter-spacing: 0.018em;
   color: #6f6f6f;
+  /* margin: 0; */
 }
 
 .project-detail-5
@@ -234,7 +234,7 @@ export default {
 
 .project-detail-5
   .project-detail-5-top-section
-  .el-col:nth-of-type(4)
+  .el-col:nth-of-type(3)
   p:first-of-type {
   font-family: "Montserrat";
   font-style: normal;
@@ -247,7 +247,7 @@ export default {
 
 .project-detail-5
   .project-detail-5-top-section
-  .el-col:nth-of-type(4)
+  .el-col:nth-of-type(3)
   p:nth-of-type(2) {
   font-family: "Montserrat";
   font-style: normal;
@@ -258,11 +258,41 @@ export default {
   color: #676565;
 }
 
+.project-detail-5 .project-detail-5-img {
+  position: relative;
+}
+
 .project-detail-5 .project-detail-5-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+.project-detail-5 .project-detail-5-img p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.375rem;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #fffdfd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* @media screen and (max-width: 991px) {
+  .project-detail-5 .project-detail-5-top-section p.p2,
+  .project-detail-5 .project-detail-5-top-section p.p1 {
+    display: none;
+  }
+
+  .project-detail-5 .project-detail-5-top-section .el-col-offset-8 {
+    margin-left: 0;
+  }
+} */
 
 @media screen and (max-width: 991px) {
   .project-detail-5 .project-detail-5-top-section p.p2,
@@ -271,7 +301,7 @@ export default {
   }
 
   .project-detail-5 .project-detail-5-top-section .el-col:nth-of-type(4) {
-    margin-top: 3srem;
+    margin-top: 3rem;
   }
 
   .project-detail-5 .project-detail-5-top-section .el-col-offset-8 {
@@ -311,6 +341,10 @@ export default {
     .el-col:nth-of-type(4)
     p:nth-of-type(2) {
     font-size: 1.3rem;
+  }
+
+  .project-detail-5 .project-detail-5-top-section .blog-text {
+    text-align: center;
   }
 }
 @media screen and (max-width: 780px) {

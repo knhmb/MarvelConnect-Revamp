@@ -2,46 +2,65 @@
   <section class="project-detail-2-top-section sidebar-menu">
     <img class="circular" src="../../assets/Subtract.png" alt="" />
     <img class="dotted" src="../../assets/Group-79.png" alt="" />
-    <p class="p1">WHAT WE DO</p>
-    <p class="p2">SCROLL</p>
-    <!-- <base-container> -->
-    <el-row>
-      <el-col>
-        <p>CASE STUDY</p>
-      </el-col>
-      <el-col :sm="24" :md="12">
-        <h4>Mass Transit System (Thailand)</h4>
-        <p>SERVICE</p>
-        <p>Website development, App(Operation managenment)</p>
-        <p>ROLE</p>
-        <ul>
-          <li>UI/UX Design</li>
-          <li>CMS</li>
-          <li>Website design</li>
-        </ul>
-      </el-col>
-      <el-col :sm="24" :md="12">
-        <img class="right-img" src="../../assets/ATS-GROUP.png" alt="" />
-      </el-col>
-      <el-col :sm="24" :md="12" :offset="8">
-        <div class="blog-text">
-          <p>The majority share holder of Thailand Mass Transit System</p>
-          <p>
-            The client is a public company in Thailand, which is the majority
-            shareholder of Bangkok Mass Transit System, and the operator of the
-            Skytrain and the Bangkok bus rapid transit system. Except for the
-            public mass transit, their business all involved media/advertising,
-            property/real estate, and associated service business.
-          </p>
-        </div>
-      </el-col>
-    </el-row>
-    <!-- </base-container> -->
+    <p class="p1">CASE STUDIES</p>
+    <!-- <p class="p2">SCROLL</p> -->
+    <base-container>
+      <el-row>
+        <el-col>
+          <p>CASE STUDY</p>
+        </el-col>
+        <el-col :sm="24" :md="11">
+          <h4>Mass Transit System (Thailand)</h4>
+          <p>SERVICE</p>
+          <p>Website development, App(Operation managenment)</p>
+          <p>ROLE</p>
+          <ul>
+            <li>UI/UX Design</li>
+            <li>CMS</li>
+            <li>Website design</li>
+          </ul>
+        </el-col>
+        <el-col :sm="24" :md="13">
+          <img
+            class="right-img"
+            src="../../assets/bangkok-electric-train-at-sukhumvit-route-2021-08-26-15-29-22-utc-1.png"
+            alt=""
+          />
+          <div class="blog-text">
+            <p>About the client</p>
+            <p>
+              The client is a public company in Thailand, which is the majority
+              shareholder of Bangkok Mass Transit System, and the operator of
+              the Skytrain and the Bangkok bus rapid transit system. Except for
+              the public mass transit, their business all involved
+              media/advertising, property/real estate, and associated service
+              business.
+            </p>
+          </div>
+        </el-col>
+        <!-- <el-col :sm="24" :md="12">
+          <div class="blog-text">
+            <p>Yearly event: In City to Save</p>
+            <p>
+              The client is a well-known international humanitarian medical NGO.
+              Every year, Borderless Doctors holds an orienteering competition
+              “in city to save” to raise funds and provide an opportunity for
+              the public to experience what are the doctors are doing in the
+              conflict areas.
+            </p>
+          </div>
+        </el-col> -->
+      </el-row>
+    </base-container>
   </section>
   <section class="project-detail-2-img">
     <el-row>
       <el-col>
-        <img src="../../assets/image-6.png" alt="" />
+        <img
+          src="../../assets/train-speeding-through-railway-station-with-extend-2021-08-26-18-55-17-utc-1.png"
+          alt=""
+        />
+        <p>The majority share holder of Thailand Mass Transit System</p>
       </el-col>
     </el-row>
   </section>
@@ -74,11 +93,12 @@ export default {
 .project-detail-2 .project-detail-2-top-section {
   padding: 3rem 0;
   position: relative;
+  background-color: #e6e6e6;
   /* overflow: hidden; */
 }
 
 .project-detail-2 .project-detail-2-top-section .el-col {
-  height: 60%;
+  /* height: 60%; */
 }
 
 .project-detail-2 .project-detail-2-top-section img.circular {
@@ -104,9 +124,8 @@ export default {
   color: #111111;
   position: absolute;
   transform: rotate(90deg);
-  right: 0;
-  top: 25%;
-  z-index: 1;
+  right: 3rem;
+  top: 33%;
 }
 .project-detail-2 .project-detail-2-top-section p.p2 {
   font-family: "Abel";
@@ -120,8 +139,7 @@ export default {
   transform: rotate(90deg);
   right: 1.8rem;
   /* left: 4rem; */
-  top: 45%;
-  z-index: 1;
+  top: 55%;
 }
 
 .project-detail-2 .project-detail-2-top-section p.p2::before {
@@ -133,12 +151,6 @@ export default {
   top: 50%;
   transform: translateY(-50%);
   left: -2.5rem;
-}
-
-.project-detail-2 .project-detail-2-top-section .el-col:first-of-type,
-.project-detail-2 .project-detail-2-top-section .el-col:nth-of-type(2),
-.project-detail-2 .project-detail-2-top-section .el-col:last-of-type {
-  padding-left: 10rem;
 }
 
 .project-detail-2 .project-detail-2-top-section p {
@@ -156,7 +168,7 @@ export default {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 4.375rem;
+  font-size: 3.8rem;
   line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
@@ -172,10 +184,11 @@ export default {
 
 .project-detail-2 .project-detail-2-top-section img.right-img {
   width: 100%;
-  /* height: 60%; */
-  object-fit: contain;
-  margin-top: 0;
-  position: relative;
+  margin: 7rem 0;
+}
+
+.project-detail-2 .project-detail-2-top-section .el-col:first-of-type p {
+  margin-left: 8rem;
 }
 
 .project-detail-2 .project-detail-2-top-section .el-col:nth-of-type(2) p,
@@ -185,9 +198,6 @@ export default {
 
 .project-detail-2 .project-detail-2-top-section .el-col:nth-of-type(2) ul {
   list-style-type: none;
-}
-
-.project-detail-2 .project-detail-2-top-section .el-col:nth-of-type(2) ul {
   margin-bottom: 2rem;
 }
 
@@ -203,6 +213,7 @@ export default {
   letter-spacing: 0.2em;
   color: #111111;
   margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .project-detail-2
@@ -216,6 +227,7 @@ export default {
   line-height: 120%;
   letter-spacing: 0.018em;
   color: #6f6f6f;
+  /* margin: 0; */
 }
 
 .project-detail-2
@@ -244,7 +256,7 @@ export default {
 
 .project-detail-2
   .project-detail-2-top-section
-  .el-col:nth-of-type(4)
+  .el-col:nth-of-type(3)
   p:first-of-type {
   font-family: "Montserrat";
   font-style: normal;
@@ -257,7 +269,7 @@ export default {
 
 .project-detail-2
   .project-detail-2-top-section
-  .el-col:nth-of-type(4)
+  .el-col:nth-of-type(3)
   p:nth-of-type(2) {
   font-family: "Montserrat";
   font-style: normal;
@@ -268,10 +280,29 @@ export default {
   color: #676565;
 }
 
+.project-detail-2 .project-detail-2-img {
+  position: relative;
+}
+
 .project-detail-2 .project-detail-2-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.project-detail-2 .project-detail-2-img p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.375rem;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #fffdfd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* @media screen and (max-width: 991px) {
@@ -332,6 +363,10 @@ export default {
     .el-col:nth-of-type(4)
     p:nth-of-type(2) {
     font-size: 1.3rem;
+  }
+
+  .project-detail-2 .project-detail-2-top-section .blog-text {
+    text-align: center;
   }
 }
 @media screen and (max-width: 780px) {

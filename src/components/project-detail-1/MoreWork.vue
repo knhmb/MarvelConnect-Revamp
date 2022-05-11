@@ -21,6 +21,7 @@
 <style scoped>
 .more-work {
   padding: 3rem 0;
+  background-color: #e6e6e6;
 }
 
 .more-work .el-col {

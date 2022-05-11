@@ -2,45 +2,49 @@
   <section class="project-detail-4-top-section sidebar-menu">
     <img class="circular" src="../../assets/Subtract.png" alt="" />
     <img class="dotted" src="../../assets/Group-79.png" alt="" />
-    <p class="p1">WHAT WE DO</p>
-    <p class="p2">SCROLL</p>
-    <!-- <base-container> -->
-    <el-row>
-      <el-col>
-        <p>CASE STUDY</p>
-      </el-col>
-      <el-col :sm="24" :md="13">
-        <h4>Dentist Clinic APP</h4>
-        <p>SERVICE</p>
-        <p>APP Design & Development, Object recognition</p>
-        <p>ROLE</p>
-        <ul>
-          <li>Animations</li>
-          <li>Object recognition</li>
-        </ul>
-      </el-col>
-      <el-col :sm="24" :md="11">
-        <img class="right-img" src="../../assets/DENTISTCLINIC.png" alt="" />
-      </el-col>
-      <el-col :sm="24" :md="12" :offset="8">
-        <div class="blog-text">
-          <p>About the client</p>
-          <p>
-            The University was established in 1982, is the first and the only
-            institution in Hong Kong that provides undergraduate and
-            postgraduate degrees of dentistry. It was ranked as the top dental
-            school in the world according to the QS World University Rankings by
-            Subject 2016-2018.
-          </p>
-        </div>
-      </el-col>
-    </el-row>
-    <!-- </base-container> -->
+    <p class="p1">CASE STUDIES</p>
+    <!-- <p class="p2">SCROLL</p> -->
+    <base-container>
+      <el-row>
+        <el-col>
+          <p>CASE STUDY</p>
+        </el-col>
+        <el-col :sm="24" :md="11">
+          <h4>Dentist Clinic APP</h4>
+          <p>SERVICE</p>
+          <p>APP Design & Development, Object recognition</p>
+          <p>UI/UX Design</p>
+          <p>ROLE</p>
+          <ul>
+            <li>Animations</li>
+            <li>Object recognition</li>
+          </ul>
+        </el-col>
+        <el-col :sm="24" :md="13">
+          <img
+            class="right-img"
+            src="../../assets/DENTISTCLINIC-2.png"
+            alt=""
+          />
+          <div class="blog-text">
+            <p>About the client</p>
+            <p>
+              The University was established in 1982, is the first and the only
+              institution in Hong Kong that provides undergraduate and
+              postgraduate degrees of dentistry. It was ranked as the top dental
+              school in the world according to the QS World University Rankings
+              by Subject 2016-2018.
+            </p>
+          </div>
+        </el-col>
+      </el-row>
+    </base-container>
   </section>
   <section class="project-detail-4-img">
     <el-row>
       <el-col>
-        <img src="../../assets/full-equiped-medical-cabinet-1.png" alt="" />
+        <img src="../../assets/full-equiped-medical-cabinet-1-1.png" alt="" />
+        <p>Reconstruct the teeth in 3D digital way.</p>
       </el-col>
     </el-row>
   </section>
@@ -73,11 +77,12 @@ export default {
 .project-detail-4 .project-detail-4-top-section {
   padding: 3rem 0;
   position: relative;
+  background-color: #e6e6e6;
   /* overflow: hidden; */
 }
 
 .project-detail-4 .project-detail-4-top-section .el-col {
-  height: 60%;
+  /* height: 60%; */
 }
 
 .project-detail-4 .project-detail-4-top-section img.circular {
@@ -103,9 +108,8 @@ export default {
   color: #111111;
   position: absolute;
   transform: rotate(90deg);
-  right: 0;
-  top: 25%;
-  z-index: 1;
+  right: 3rem;
+  top: 33%;
 }
 .project-detail-4 .project-detail-4-top-section p.p2 {
   font-family: "Abel";
@@ -119,8 +123,7 @@ export default {
   transform: rotate(90deg);
   right: 1.8rem;
   /* left: 4rem; */
-  top: 45%;
-  z-index: 1;
+  top: 55%;
 }
 
 .project-detail-4 .project-detail-4-top-section p.p2::before {
@@ -132,12 +135,6 @@ export default {
   top: 50%;
   transform: translateY(-50%);
   left: -2.5rem;
-}
-
-.project-detail-4 .project-detail-4-top-section .el-col:first-of-type,
-.project-detail-4 .project-detail-4-top-section .el-col:nth-of-type(2),
-.project-detail-4 .project-detail-4-top-section .el-col:last-of-type {
-  padding-left: 10rem;
 }
 
 .project-detail-4 .project-detail-4-top-section p {
@@ -155,7 +152,7 @@ export default {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 4.375rem;
+  font-size: 3.7rem;
   line-height: 5.625rem;
   letter-spacing: -0.005em;
   color: #111111;
@@ -171,11 +168,11 @@ export default {
 
 .project-detail-4 .project-detail-4-top-section img.right-img {
   width: 100%;
-  /* height: 60%; */
-  object-fit: contain;
-  margin-top: 0;
-  margin-bottom: 5rem;
-  position: relative;
+  margin: 7rem 0;
+}
+
+.project-detail-4 .project-detail-4-top-section .el-col:first-of-type p {
+  margin-left: 8rem;
 }
 
 .project-detail-4 .project-detail-4-top-section .el-col:nth-of-type(2) p,
@@ -185,9 +182,6 @@ export default {
 
 .project-detail-4 .project-detail-4-top-section .el-col:nth-of-type(2) ul {
   list-style-type: none;
-}
-
-.project-detail-4 .project-detail-4-top-section .el-col:nth-of-type(2) ul {
   margin-bottom: 2rem;
 }
 
@@ -203,6 +197,7 @@ export default {
   letter-spacing: 0.2em;
   color: #111111;
   margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .project-detail-4
@@ -216,6 +211,7 @@ export default {
   line-height: 120%;
   letter-spacing: 0.018em;
   color: #6f6f6f;
+  /* margin: 0; */
 }
 
 .project-detail-4
@@ -244,7 +240,7 @@ export default {
 
 .project-detail-4
   .project-detail-4-top-section
-  .el-col:nth-of-type(4)
+  .el-col:nth-of-type(3)
   p:first-of-type {
   font-family: "Montserrat";
   font-style: normal;
@@ -257,7 +253,7 @@ export default {
 
 .project-detail-4
   .project-detail-4-top-section
-  .el-col:nth-of-type(4)
+  .el-col:nth-of-type(3)
   p:nth-of-type(2) {
   font-family: "Montserrat";
   font-style: normal;
@@ -268,10 +264,29 @@ export default {
   color: #676565;
 }
 
+.project-detail-4 .project-detail-4-img {
+  position: relative;
+}
+
 .project-detail-4 .project-detail-4-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.project-detail-4 .project-detail-4-img p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.375rem;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #fffdfd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* @media screen and (max-width: 991px) {
@@ -289,10 +304,6 @@ export default {
   .project-detail-4 .project-detail-4-top-section p.p2,
   .project-detail-4 .project-detail-4-top-section p.p1 {
     display: none;
-  }
-
-  .project-detail-4 .project-detail-4-top-section .el-col:nth-of-type(4) {
-    padding-right: 10rem;
   }
 
   .project-detail-4 .project-detail-4-top-section .el-col:nth-of-type(4) {
@@ -336,6 +347,10 @@ export default {
     .el-col:nth-of-type(4)
     p:nth-of-type(2) {
     font-size: 1.3rem;
+  }
+
+  .project-detail-4 .project-detail-4-top-section .blog-text {
+    text-align: center;
   }
 }
 @media screen and (max-width: 780px) {
