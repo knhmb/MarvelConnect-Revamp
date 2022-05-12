@@ -5,16 +5,22 @@
       <el-row :gutter="20">
         <el-col :sm="24" :md="12">
           <img
+            @click="$router.push('/project-detail-1')"
             src="../../assets/female-doctor-using-mobile-phone-in-clinic-2021-09-04-14-28-19-ut-3.png"
             alt=""
           />
           <p>Orienteering APP</p>
-          <p>Know more</p>
+          <p @click="$router.push('/project-detail-1')">Know more</p>
         </el-col>
         <el-col :sm="24" :md="12">
-          <img src="../../assets/image-16-2.png" alt="" />
-          <p>Dentist Clinic APP</p>
-          <p>Know more</p>
+          <img
+            @click="$router.push('/project-detail-3')"
+            src="../../assets/image-16-2.png"
+            alt=""
+          />
+          <!-- <p>Dentist Clinic APP</p> -->
+          <p>APP of Science Parks</p>
+          <p @click="$router.push('/project-detail-3')">Know more</p>
         </el-col>
       </el-row>
     </base-container>
@@ -44,6 +50,12 @@
 
 .recent-work img {
   width: 100%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.recent-work img:hover {
+  transform: rotateY(30deg);
 }
 
 .recent-work p:first-of-type {
@@ -55,6 +67,7 @@
   text-align: right;
   letter-spacing: -0.014em;
   color: #111111;
+
   /* margin-top: -5.5rem; */
 }
 
@@ -66,6 +79,13 @@
   line-height: 2.25rem;
   text-align: right;
   color: #111111;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.recent-work p:nth-of-type(2):hover {
+  color: grey;
+  transform: translateY(-0.5rem);
 }
 
 /* .recent-work .el-col:nth-of-type(2) p:first-of-type {

@@ -8,7 +8,7 @@
         YOU HAVE A VISION, <br />
         WE HAVE A WAY TO GET YOU THERE.
       </h4>
-      <div class="btn-content">
+      <div @click="$router.push('/contact')" class="btn-content">
         <div class="btn"></div>
         <span>LET’S TALK</span>
         <el-icon><plus /></el-icon>
@@ -81,6 +81,8 @@ export default {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  text-align: center;
+  position: relative;
 }
 .work-together .btn-content .btn {
   width: 2.8125rem;
@@ -88,6 +90,7 @@ export default {
   border-radius: 50%;
   background: rgba(255, 250, 250, 0.5);
   display: inline-block;
+  cursor: pointer;
 }
 
 .work-together .btn-content span {

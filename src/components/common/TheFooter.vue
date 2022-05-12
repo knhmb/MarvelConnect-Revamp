@@ -18,17 +18,15 @@
         <el-col :sm="24" :lg="12">
           <p class="contact-us">GET IN TOUCH</p>
           <div class="contact-info">
-            <a href="#">info@marvelconnect.com</a>
+            <a href="mailto:info@marvelconnect.com">info@marvelconnect.com</a>
             <a href="#">(852) 3116-7505</a>
           </div>
           <div class="explore">
             <p>EXPLORE</p>
             <ul>
-              <li>Work</li>
+              <li @click="$router.push('/projects')">Projects</li>
               <li @click="$router.push('/services')">Services</li>
               <li @click="$router.push('/about-us')">About</li>
-              <li>Careers</li>
-              <li>Insights</li>
               <li @click="$router.push('/contact')">Contact</li>
             </ul>
             <p class="location">
@@ -135,6 +133,11 @@
   color: #9c9c9c;
   cursor: pointer;
   position: relative;
+  transition: color 0.3s ease-out;
+}
+
+.footer .explore li:hover {
+  color: #fff;
 }
 
 .footer .explore p.location {

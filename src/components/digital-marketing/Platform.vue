@@ -78,7 +78,8 @@
   font-family: "Abel";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.25rem;
+  /* font-size: 2.25rem; */
+  font-size: 1.75rem;
   padding-right: 2rem;
   line-height: 210%;
   color: #6f6f6f;

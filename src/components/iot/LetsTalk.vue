@@ -16,22 +16,26 @@
             alt=""
           />
           <p>
-            The term "Internet of Things" refers to the various methods by which
-            tangible or intangible objects are connected in order to provide new
-            services that the individual items could not provide. As the term
-            itself implies, the Internet of Things refers to an internet in
-            which objects are connected together or an internet composed of
-            objects.
+            Case study: Watch retailer with over 50 years of experience. Each
+            tourbillon watch has a story behind it. Just like human souls, it
+            not only provides accurate timing but also serves as a precious
+            collection piece. As a well-known brand in the watches industry, the
+            company pays attention to sales and innovation. However, in the
+            process of innovation, how to preserve the traditional spirit is a
+            question for the retailers and the developers.
           </p>
           <p>
-            Unlike the pre-existing internet, through which computers or
-            cellphones were connected, the Internet of Things means an internet
-            in which everything in the world– desks, vehicles, bags, trees,
-            pets, and everything else–is connected.
+            To preserve the tradition, Marvelconnect introduced a new AI
+            technology. The display was developed with the assistance of AI
+            technology and machine learning and was able to identify the gender,
+            age, and facial expression of customers. The system created
+            tailor-made scenarios to attract different types of customers.
           </p>
         </el-col>
         <el-col>
-          <base-button centered :mode="'bold'">LET’S TALK</base-button>
+          <base-button @click="$router.push('/contact')" centered :mode="'bold'"
+            >LET’S TALK</base-button
+          >
         </el-col>
       </el-row>
     </base-container>

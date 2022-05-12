@@ -29,7 +29,9 @@
           </p>
         </el-col>
         <el-col>
-          <base-button centered :mode="'bold'">LET’S TALK</base-button>
+          <base-button @click="$router.push('/contact')" centered :mode="'bold'"
+            >LET’S TALK</base-button
+          >
         </el-col>
       </el-row>
     </base-container>

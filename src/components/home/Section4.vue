@@ -13,7 +13,9 @@
           We believed a well-designed website is essential for building a
           successful business image.
         </p>
-        <base-button :centered="isActive">VIEW OUR SERVICES</base-button>
+        <base-button @click="$router.push('/web-n-app')" :centered="isActive"
+          >VIEW OUR SERVICES</base-button
+        >
       </el-col>
     </el-row>
     <el-row>
@@ -30,7 +32,9 @@
           application development, from the traditional CGI, C, and Java to the
           popular PHP, Python, and JS.
         </p>
-        <base-button :centered="isActive">VIEW OUR SERVICES</base-button>
+        <base-button @click="$router.push('/web-n-app')" :centered="isActive"
+          >VIEW OUR SERVICES</base-button
+        >
       </el-col>
     </el-row>
     <el-row>
@@ -46,7 +50,11 @@
           Through digitization, a business can achieve increased brand value,
           expand the client base, and best utilization of human resources.
         </p>
-        <base-button :centered="isActive">VIEW OUR SERVICES</base-button>
+        <base-button
+          @click="$router.push('/digital-marketing')"
+          :centered="isActive"
+          >VIEW OUR SERVICES</base-button
+        >
       </el-col>
     </el-row>
   </div>

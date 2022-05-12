@@ -4,14 +4,22 @@
       <h4>More Works...</h4>
       <el-row :gutter="30">
         <el-col :span="12">
-          <img src="../../assets/DENTISTCLINIC.png" alt="" />
+          <img
+            @click="$router.push('/project-detail-4')"
+            src="../../assets/DENTISTCLINIC.png"
+            alt=""
+          />
           <p>Dentist Clinic APP</p>
-          <p>Know More</p>
+          <p @click="$router.push('/project-detail-4')">Know More</p>
         </el-col>
         <el-col :span="12">
-          <img src="../../assets/image-8.png" alt="" />
+          <img
+            @click="$router.push('/project-detail-5')"
+            src="../../assets/image-8.png"
+            alt=""
+          />
           <p>The Best Hotel Booking Sites</p>
-          <p>Know More</p>
+          <p @click="$router.push('/project-detail-5')">Know More</p>
         </el-col>
       </el-row>
     </base-container>
@@ -42,6 +50,12 @@
 
 .more-work img {
   width: 100%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.more-work img:hover {
+  transform: rotateY(30deg);
 }
 
 .more-work p:first-of-type {
@@ -63,6 +77,12 @@
   line-height: 2.25rem;
   text-align: right;
   color: #111111;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.more-work p:nth-of-type(2):hover {
+  color: grey;
+  transform: translateY(-0.5rem);
 }
 
 @media screen and (max-width: 722px) {

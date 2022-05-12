@@ -14,7 +14,9 @@
           </p>
         </el-col>
         <el-col :sm="24" :md="9">
-          <a class="email" href="#">info@marvelconnect.com</a>
+          <a class="email" href="mailto:info@marvelconnect.com"
+            >info@marvelconnect.com</a
+          >
         </el-col>
         <el-col :sm="24" :md="9">
           <a href="#">+852-3116 7505</a>
@@ -78,6 +80,12 @@
 
 .lets-talk .el-col a.email::after {
   width: 90%;
+  cursor: pointer;
+  transition: width 0.5s ease-out;
+}
+
+.lets-talk .el-col a.email:hover::after {
+  width: 100%;
 }
 
 @media screen and (max-width: 700px) {

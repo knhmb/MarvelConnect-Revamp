@@ -4,43 +4,57 @@
       <el-row :gutter="30">
         <el-col :sm="24" :md="12">
           <img
+            @click="$router.push('/project-detail-1')"
             src="../../assets/female-doctor-using-mobile-phone-in-clinic-2021-09-04-14-28-19-ut-3.png"
             alt=""
           />
           <div class="text">
-            <p class="project-name">Orientation APP</p>
-            <p>Know more</p>
-          </div>
-        </el-col>
-        <el-col :sm="24" :md="12">
-          <img src="../../assets/image-16-2.png" alt="" />
-          <div class="text">
-            <p class="project-name">APP of Science Parks</p>
-            <p>Know more</p>
-          </div>
-        </el-col>
-        <el-col :sm="24" :md="12">
-          <img src="../../assets/DENTISTCLINIC.png" alt="" />
-          <div class="text">
-            <p class="project-name">Dentist Clinic APP</p>
-            <p>Know more</p>
-          </div>
-        </el-col>
-        <el-col :sm="24" :md="12">
-          <img src="../../assets/image-8.png" alt="" />
-          <div class="text">
-            <p class="project-name">The Best Hotel Booking Sites</p>
-            <p>Know more</p>
+            <p class="project-name">Orienteering APP</p>
+            <p @click="$router.push('/project-detail-1')">Know more</p>
           </div>
         </el-col>
         <el-col :sm="24" :md="12">
           <img
+            @click="$router.push('/project-detail-3')"
+            src="../../assets/image-16-2.png"
+            alt=""
+          />
+          <div class="text">
+            <p class="project-name">APP of Science Parks</p>
+            <p @click="$router.push('/project-detail-3')">Know more</p>
+          </div>
+        </el-col>
+        <el-col :sm="24" :md="12">
+          <img
+            @click="$router.push('/project-detail-4')"
+            src="../../assets/DENTISTCLINIC.png"
+            alt=""
+          />
+          <div class="text">
+            <p class="project-name">Dentist Clinic APP</p>
+            <p @click="$router.push('/project-detail-4')">Know more</p>
+          </div>
+        </el-col>
+        <el-col :sm="24" :md="12">
+          <img
+            @click="$router.push('/project-detail-5')"
+            src="../../assets/image-8.png"
+            alt=""
+          />
+          <div class="text">
+            <p class="project-name">The Best Hotel Booking Sites</p>
+            <p @click="$router.push('/project-detail-5')">Know more</p>
+          </div>
+        </el-col>
+        <el-col :sm="24" :md="12">
+          <img
+            @click="$router.push('/project-detail-2')"
             src="../../assets/bangkok-electric-train-at-sukhumvit-route-2021-08-26-15-29-22-utc-2.png"
             alt=""
           />
           <div class="text">
             <p class="project-name">Website and App of Mass Transit System</p>
-            <p>Know more</p>
+            <p @click="$router.push('/project-detail-2')">Know more</p>
           </div>
         </el-col>
         <el-col :sm="24" :md="12">
@@ -74,8 +88,14 @@
 
 .project-lists .el-row .el-col img {
   width: 100%;
+  cursor: pointer;
+  transition: 0.8s;
   /* height: 100%; */
   /* object-fit: contain; */
+}
+
+.project-lists .el-row .el-col img:hover {
+  transform: rotateY(30deg);
 }
 
 .project-lists .el-row .el-col p.project-name {
@@ -98,6 +118,13 @@
   line-height: 2.25rem;
   text-align: right;
   color: #111111;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.project-lists .el-row .el-col p:nth-of-type(2):hover {
+  color: grey;
+  transform: translateY(-0.5rem);
 }
 
 .project-lists .el-row .el-col .text {
@@ -122,9 +149,9 @@
   color: #111;
 }
 
-.project-lists .el-row .el-col:nth-child(3) p:nth-of-type(2) {
-  color: #6f6f6f;
-}
+/* .project-lists .el-row .el-col:nth-child(3) p:nth-of-type(2) {
+  color: #111;
+} */
 
 .project-lists .el-row .el-col:nth-child(4) img {
   /* margin-top: 6rem; */

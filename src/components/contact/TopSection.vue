@@ -7,7 +7,10 @@
           Hi. Tell us about <br />
           your project.
         </h4>
-        <p>Fill out our form below or <a href="">send us an email.</a></p>
+        <p>
+          Fill out our form below or
+          <a href="mailto:info@marvelconnect.com">send us an email.</a>
+        </p>
         <el-row :gutter="40">
           <el-col :sm="24" :md="12">
             <Form />

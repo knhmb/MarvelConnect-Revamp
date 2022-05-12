@@ -6,18 +6,23 @@
         <el-col :span="12">
           <!-- <div class="img-content"> -->
           <img
+            @click="$router.push('/project-detail-1')"
             src="../../assets/female-doctor-using-mobile-phone-in-clinic-2021-09-04-14-28-19-ut-3.png"
             alt=""
           />
           <p>Orienteering APP</p>
-          <p>Know More</p>
+          <p @click="$router.push('/project-detail-1')">Know More</p>
           <!-- </div> -->
         </el-col>
         <el-col :span="12">
           <!-- <div class="img-content"> -->
-          <img src="../../assets/image-16-2.png" alt="" />
+          <img
+            @click="$router.push('/project-detail-3')"
+            src="../../assets/image-16-2.png"
+            alt=""
+          />
           <p>APP of Science P<span>arks</span></p>
-          <p>Know More</p>
+          <p @click="$router.push('/project-detail-3')">Know More</p>
           <!-- </div> -->
         </el-col>
       </el-row>
@@ -53,29 +58,17 @@
 
 .more-work img {
   width: 100%;
-  /* height: 100%; */
-  /* object-fit: contain; */
+  cursor: pointer;
+  transition: 0.8s;
 }
 
-/* .more-work .el-col:first-of-type p:first-of-type {
-  left: 9rem;
+.more-work img:hover {
+  transform: rotateY(30deg);
 }
-.more-work .el-col:first-of-type p:nth-of-type(2) {
-  right: 6rem;
-} */
-
-/* .more-work .el-col:nth-of-type(2) p:first-of-type {
-  right: -2.6rem;
-  color: #fff;
-} */
 
 .more-work .el-col:nth-of-type(2) p:first-of-type span {
   color: #111;
 }
-
-/* .more-work .el-col:nth-of-type(2) p:nth-of-type(2) {
-  right: -3rem;
-} */
 
 .more-work p:first-of-type {
   font-family: "Montserrat";
@@ -96,6 +89,13 @@
   line-height: 2.25rem;
   text-align: right;
   color: #111111;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.more-work p:nth-of-type(2):hover {
+  color: grey;
+  transform: translateY(-0.5rem);
 }
 
 @media screen and (max-width: 722px) {

@@ -46,10 +46,7 @@
         <img src="../../assets/image-9-2.png" alt="" />
       </el-col>
       <el-col :sm="24" :md="12">
-        <img
-          src="../../assets/photograph-of-a-track-and-trace-qr-code-2022-03-04-02-23-54-utc-1.png"
-          alt=""
-        />
+        <img src="../../assets/img06_project1.jpg" alt="" />
       </el-col>
       <el-col :sm="24" :md="11">
         <h4>New experience with object recognition</h4>

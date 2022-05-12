@@ -22,11 +22,11 @@
               Digital marketing is one of the essential elements for companies
               to boost their business and sales.
             </p>
-            <p>
+            <!-- <p>
               For many years, we have adopted cutting-edge technologies in
               application development, from the traditional CGI, C and Java to
               the popular PHP, Python, and JS.
-            </p>
+            </p> -->
           </div>
         </el-col>
       </el-row>

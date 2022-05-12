@@ -11,6 +11,7 @@
       <el-col :sm="24" :md="12">
         <!-- <div class="img-container"> -->
         <img
+          @click="$router.push('/project-detail-1')"
           src="../../assets/female-doctor-using-mobile-phone-in-clinic-2021-09-04-14-28-19-ut-3.png"
           alt=""
         />
@@ -23,7 +24,11 @@
       </el-col>
       <el-col class="science-parks" :sm="24" :md="12">
         <div class="img-container">
-          <img src="../../assets/image-16-2.png" alt="" />
+          <img
+            @click="$router.push('/project-detail-3')"
+            src="../../assets/image-16-2.png"
+            alt=""
+          />
           <p>APP of Science P<span>arks</span></p>
           <p @click="$router.push('/project-detail-3')" class="additional-info">
             Know more
@@ -32,7 +37,11 @@
       </el-col>
       <el-col class="dentist-app" :sm="24" :md="12">
         <div class="img-container">
-          <img src="../../assets/DENTISTCLINIC.png" alt="" />
+          <img
+            @click="$router.push('/project-detail-4')"
+            src="../../assets/DENTISTCLINIC.png"
+            alt=""
+          />
           <p>Dentist Clinic APP</p>
           <p @click="$router.push('/project-detail-4')" class="additional-info">
             Know more
@@ -41,7 +50,11 @@
       </el-col>
       <el-col class="dentist-app-2" :sm="24" :md="12">
         <div class="img-container">
-          <img src="../../assets/image-8.png" alt="" />
+          <img
+            @click="$router.push('/project-detail-5')"
+            src="../../assets/image-8.png"
+            alt=""
+          />
           <p>The Best Hotel Booking Sites</p>
           <p @click="$router.push('/project-detail-5')" class="additional-info">
             Know more
@@ -51,7 +64,9 @@
     </el-row>
     <el-row>
       <el-col class="btn-readmore">
-        <base-button>VIEW MORE WORK</base-button>
+        <base-button @click="$router.push('/projects')" centered
+          >VIEW MORE WORK</base-button
+        >
       </el-col>
     </el-row>
   </section>
@@ -105,6 +120,7 @@
 
 .featured-work .images img {
   width: 100%;
+  cursor: pointer;
   /* height: 60%; */
   /* object-fit: contain; */
   /* width: 304px; */

@@ -38,6 +38,8 @@ export default {
   cursor: pointer;
   width: fit-content;
   width: 100%;
+  cursor: pointer;
+  position: relative;
 }
 .btn-content .btn {
   width: 2.8125rem;

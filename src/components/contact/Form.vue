@@ -97,7 +97,7 @@ export default {
   color: #fff;
 }
 
-.contact-form .el-form .el-form-item .el-input_wrapper {
+.contact-form .el-form .el-form-item .el-input__wrapper {
   padding: 0;
 }
 

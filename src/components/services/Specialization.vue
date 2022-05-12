@@ -10,22 +10,42 @@
         </el-col>
         <el-col class="hidden-md-and-down" :span="12" :offset="12">
           <ul>
-            <li>Website and App Development</li>
-            <li>Artificial Intelligence (AI) and machine learning</li>
-            <li>Internet of Things (IoT)</li>
-            <li>Media</li>
-            <li>Digital Marketing</li>
-            <li>Translation and Press Release Writing</li>
+            <li @click="$router.push('/web-n-app')">
+              Website and App Development
+            </li>
+            <li @click="$router.push('/artificial-intelligence')">
+              Artificial Intelligence (AI) and machine learning
+            </li>
+            <li @click="$router.push('/internet-of-things')">
+              Internet of Things (IoT)
+            </li>
+            <li @click="$router.push('/media')">Media</li>
+            <li @click="$router.push('/digital-marketing')">
+              Digital Marketing
+            </li>
+            <li @click="$router.push('/writing')">
+              Translation and Press Release Writing
+            </li>
           </ul>
         </el-col>
         <el-col class="hidden-lg-and-up">
           <ul>
-            <li>Website and App Development</li>
-            <li>Artificial Intelligence (AI) and machine learning</li>
-            <li>Internet of Things (IoT)</li>
-            <li>Media</li>
-            <li>Digital Marketing</li>
-            <li>Translation and Press Release Writing</li>
+            <li @click="$router.push('/web-n-app')">
+              Website and App Development
+            </li>
+            <li @click="$router.push('/artificial-intelligence')">
+              Artificial Intelligence (AI) and machine learning
+            </li>
+            <li @click="$router.push('/internet-of-things')">
+              Internet of Things (IoT)
+            </li>
+            <li @click="$router.push('/media')">Media</li>
+            <li @click="$router.push('/digital-marketing')">
+              Digital Marketing
+            </li>
+            <li @click="$router.push('/writing')">
+              Translation and Press Release Writing
+            </li>
           </ul>
         </el-col>
       </el-row>
@@ -65,6 +85,12 @@
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition: padding 0.3s ease-out;
+}
+
+.services .specialization li:hover {
+  padding-left: 1rem;
 }
 
 .services .specialization li::before {

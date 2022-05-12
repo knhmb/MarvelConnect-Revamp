@@ -24,13 +24,14 @@
           </div>
           <div :class="{ open: openNav }" class="wrapper">
             <ul>
-              <li><a href="#">Work</a></li>
+              <li><a @click="navigate('projects')" href="#">Projects</a></li>
               <li><a @click="navigate('services')" href="#">Services</a></li>
               <li><a @click="navigate('about-us')" href="#">About</a></li>
-              <li><a href="#">Insights</a></li>
               <li><a @click="navigate('contact')" href="#">Contact</a></li>
             </ul>
-            <p class="email">info@marvelconnect.com</p>
+            <a href="mailto:info@marvelconnect.com" class="email"
+              >info@marvelconnect.com</a
+            >
             <p class="phone">+852-31167505</p>
             <p class="location">
               Unit 1701, 17/F, Enterprise Square Three,39 Wang Chiu Road,
@@ -60,7 +61,7 @@
               MANKIND IS GREAT BECAUSE OF DREAMS <br />
               APPS/website/AI/Machine Learning/Big Data/Iot
             </p>
-            <div class="btn-content">
+            <div @click="$router.push('/about-us')" class="btn-content">
               <div class="btn"></div>
               <span>GET TO KNOW US</span>
               <el-icon><plus /></el-icon>
@@ -364,6 +365,7 @@ span.menu-text::after {
   right: 20%;
   bottom: 40%;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .wrapper .email::after {
@@ -373,6 +375,11 @@ span.menu-text::after {
   height: 0.1rem;
   left: 0;
   display: block;
+  transition: width 0.5s ease-out;
+}
+
+.wrapper .email:hover::after {
+  width: 100%;
 }
 
 .wrapper .phone {
@@ -396,6 +403,11 @@ span.menu-text::after {
   height: 0.1rem;
   left: 0;
   display: block;
+  transition: width 0.5s ease-out;
+}
+
+.wrapper .phone:hover::after {
+  width: 100%;
 }
 
 .wrapper .location {
@@ -506,6 +518,7 @@ span.menu-text::after {
   align-items: center;
   cursor: pointer;
   width: fit-content;
+  cursor: pointer;
 }
 .inner-body-content .btn-content .btn {
   width: 2.813rem;

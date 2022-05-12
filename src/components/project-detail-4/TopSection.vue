@@ -224,7 +224,7 @@ export default {
   font-size: 0.9375rem;
   line-height: 135%;
   letter-spacing: 0.2em;
-  color: #111111;
+  color: #6f6f6f;
 }
 
 .project-detail-4 .project-detail-4-top-section .el-col:nth-of-type(2) li {

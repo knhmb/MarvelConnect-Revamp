@@ -4,14 +4,22 @@
       <h4>Recent work</h4>
       <el-row :gutter="20">
         <el-col :sm="24" :md="12">
-          <img src="../../assets/DENTISTCLINIC.png" alt="" />
+          <img
+            @click="$router.push('/project-detail-4')"
+            src="../../assets/DENTISTCLINIC.png"
+            alt=""
+          />
           <p>Dentist Clinic APP</p>
-          <p>Know more</p>
+          <p @click="$router.push('/project-detail-4')">Know more</p>
         </el-col>
         <el-col :sm="24" :md="12">
-          <img src="../../assets/image-8.png" alt="" />
+          <img
+            @click="$router.push('/project-detail-5')"
+            src="../../assets/image-8.png"
+            alt=""
+          />
           <p>The Best Hotel Booking Sites</p>
-          <p>Know more</p>
+          <p @click="$router.push('/project-detail-5')">Know more</p>
         </el-col>
       </el-row>
     </base-container>
@@ -40,6 +48,12 @@
 
 .recent-work img {
   width: 100%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.recent-work img:hover {
+  transform: rotateY(30deg);
 }
 
 .recent-work p:first-of-type {
@@ -61,6 +75,13 @@
   line-height: 2.25rem;
   text-align: right;
   color: #111111;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.recent-work p:nth-of-type(2):hover {
+  color: grey;
+  transform: translateY(-0.5rem);
 }
 .recent-work .el-col:nth-of-type(2) p:first-of-type {
   color: #111;

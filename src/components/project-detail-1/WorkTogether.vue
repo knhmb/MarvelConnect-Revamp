@@ -5,7 +5,7 @@
     <base-container>
       <p>WORK WITH US</p>
       <h4>Let’s work together to build something great.</h4>
-      <div class="btn-content">
+      <div @click="$router.push('/projects')" class="btn-content">
         <div class="btn"></div>
         <span :class="mode">View More Work</span>
         <el-icon><plus /></el-icon>
@@ -76,6 +76,8 @@ export default {
   cursor: pointer;
   width: fit-content;
   margin-left: 2rem;
+  cursor: pointer;
+  position: relative;
 }
 .btn-content .btn {
   width: 2.8125rem;

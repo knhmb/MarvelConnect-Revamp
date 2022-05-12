@@ -8,7 +8,9 @@
         Your will, <br />
         Our hands.
       </h4>
-      <base-button class="btn"> View our works </base-button>
+      <base-button @click="$router.push('/projects')" class="btn">
+        View our works
+      </base-button>
     </base-container>
   </section>
 </template>
