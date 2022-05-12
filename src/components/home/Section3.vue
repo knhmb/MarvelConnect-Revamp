@@ -3,11 +3,12 @@
     <base-container>
       <h4>A DIGITAL AGENCY</h4>
       <p>
-        Marvelconnect is an innovative company and has 9 years of experience
-        since founded. We provide various innovative technology services, from
-        traditional mobile apps and websites to the latest AI, Machine Learning,
-        Big Data, and IoT. Marvelconnect has always been a trustworthy partner
-        and service provider to our clients around the globe.
+        Marvelconnect is an innovative company and has more than 10 years of
+        experience since founded. We provide various innovative technology
+        services, from traditional mobile apps and websites to the latest AI,
+        Machine Learning, Big Data, and IoT. Marvelconnect has always been a
+        trustworthy partner and service provider to our clients around the
+        globe.
       </p>
     </base-container>
   </div>
