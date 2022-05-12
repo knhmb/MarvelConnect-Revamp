@@ -31,7 +31,7 @@
         </p>
       </el-col>
       <el-col :sm="24" :md="11">
-        <h4>Restricted number of stuff</h4>
+        <h4>Time record and maintenance report</h4>
         <p>
           Step1, the frontline workers arrive at the site and report if there is
           any issue with the control room.
@@ -50,7 +50,8 @@
         <h4>New experience with object recognition</h4>
         <p>
           Step2, the control will divide jobs for different workers, and workers
-          received their orders via the app.
+          received their orders via the app. Workers can use object recognition
+          during their work.
         </p>
       </el-col>
       <el-col :sm="24" :md="11">

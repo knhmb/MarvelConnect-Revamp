@@ -30,10 +30,10 @@
             <p>About the client</p>
             <p>
               The client is a well-known international humanitarian medical NGO.
-              Every year, Borderless Doctors holds an orienteering competition
-              “in city to save” to raise funds and provide an opportunity for
-              the public to experience what are the doctors are doing in the
-              conflict areas.
+              Every year, an international doctor organization holds an
+              orienteering competition “in city to save” to raise funds and
+              provide an opportunity for the public to experience what the
+              doctors are doing in the conflict areas.
             </p>
           </div>
         </el-col>
