@@ -17,7 +17,7 @@
             alt=""
           />
           <p>
-            Marvelconnect has years of writing and editing experience and
+            Marvelconnect has many years of writing and editing experience and
             received support and trust from many clients. We have provided over
             6 million words of content to listed companies, PR agencies, Forbes
             500 companies, and local companies. Apart from writing,

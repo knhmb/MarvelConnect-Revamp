@@ -20,7 +20,7 @@
             alt=""
           />
           <div class="text">
-            <p class="project-name">APP of Science Parks</p>
+            <p class="project-name">APP for Property Maintenance Company</p>
             <p @click="$router.push('/project-detail-3')">Know more</p>
           </div>
         </el-col>

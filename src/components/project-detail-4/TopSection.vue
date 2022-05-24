@@ -29,8 +29,7 @@
           <div class="blog-text">
             <p>About the client</p>
             <p>
-              The University was established in 1982, is the first and the only
-              institution in Hong Kong that provides undergraduate and
+              The University is an institution that provides undergraduate and
               postgraduate degrees of dentistry. It was ranked as the top dental
               school in the world according to the QS World University Rankings
               by Subject 2016-2018.

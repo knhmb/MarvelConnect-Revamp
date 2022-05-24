@@ -20,10 +20,10 @@
       <el-col :sm="24" :md="12">
         <p class="title">SEO (Google / Yahoo)</p>
         <p>
-          Search Engine Optimization (SEO). Most customers are searching for
-          your product / business starting with search engines. Increase in
-          website traffic, sales, and higher keyword rankings on Google / Yahoo,
-          SEO is what you needed.
+          We will check and provide a complete list of technical errors that
+          might have been dragging your website from getting the top spot on
+          search engines. Moreover, to help fix all the identified technical
+          errors of your websites to make right its SEO friendliness.
         </p>
         <p class="title">SEM (Google Ads)</p>
         <p>

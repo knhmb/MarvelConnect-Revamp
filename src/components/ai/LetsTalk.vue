@@ -17,20 +17,13 @@
             alt=""
           />
           <p>
-            Case study: Watch retailer with over 50 years of experience Each
-            tourbillon watch has a story behind it, just like human souls, it
-            not only provides accurate timing but also serves as a precious
-            collection piece. As a well-known brand in the watches industry, the
-            company pays attention to both sales and innovation. However, in the
-            process of innovation, how to preserve the traditional spirit is
-            both a question for the retailers and for the developers.
-          </p>
-          <p>
-            In order to preserve the tradition, Marvelconnect introduced a new
-            AI technology. The display was developed with the assistance of AI
-            technology and machine learning and was able to identify the gender,
-            age, and facial expression of customers. The system created
-            tailor-made scenarios to attract different types of customers.
+            With experience in the AI development area, Marvelconnect with deep
+            expertise in machine learning, deep learning, NLP, conversational
+            AI, computer vision technologies, and neural networks. The most
+            advanced companies understand that AI is the bridge to convert new
+            kinds of data into business value for a better quantity and quality.
+            Let's work together to make your organization future-proof with
+            cutting-edge AI solutions.
           </p>
         </el-col>
         <el-col>

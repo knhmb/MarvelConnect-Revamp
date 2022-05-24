@@ -28,9 +28,10 @@
       <el-col class="p-right-2" :sm="24" :md="10">
         <p class="title">Mobile apps</p>
         <p>
-          For many years, we have adopted cutting-edge technologies in
-          application development, from the traditional CGI, C, and Java to the
-          popular PHP, Python, and JS.
+          As an app developer in Hong Kong, our mobile app development services
+          are tailored to help you to capitalize on growth opportunities and
+          solve pressing business problems. From idea to launch, our #1 priority
+          is performance, usability, and results.
         </p>
         <base-button @click="$router.push('/web-n-app')" :centered="isActive"
           >VIEW OUR SERVICES</base-button

@@ -10,7 +10,7 @@
           <p>CASE STUDY</p>
         </el-col>
         <el-col :sm="24" :md="11">
-          <h4>APP of Science Parks Corporation</h4>
+          <h4>APP for Property Maintenance Company</h4>
           <p>SERVICE</p>
           <p>APP Design & Development</p>
           <p>ROLE</p>

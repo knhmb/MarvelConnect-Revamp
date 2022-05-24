@@ -29,7 +29,7 @@
             src="../../assets/image-16-2.png"
             alt=""
           />
-          <p>APP of Science P<span>arks</span></p>
+          <p>APP for Property Maintenance Company</p>
           <p @click="$router.push('/project-detail-3')" class="additional-info">
             Know more
           </p>

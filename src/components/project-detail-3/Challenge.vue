@@ -5,12 +5,11 @@
       <el-col :sm="24" :md="11">
         <h4>Challenge</h4>
         <p>
-          Being a “flagship technology infrastructure” of Hong Kong, the Science
-          Park provides a campus-like environment of 330000 square meters.
-          Because of its scale and size, and to keep the image of a
-          high-technology enterprise, the workload, and manpower required for
-          infrastructure purposes is high. Thus, systematical management is
-          needed for daily maintenance.
+          Being a “flagship technology infrastructure”, the company provides a
+          campus-like environment of 330000 square meters. Because of its scale
+          and size, and to keep the image of a high-technology enterprise, the
+          workload, and manpower required for infrastructure purposes is high.
+          Thus, systematical management is needed for daily maintenance.
         </p>
       </el-col>
       <el-col :sm="24" :md="12">

@@ -29,12 +29,10 @@
           <div class="blog-text">
             <p>About the client</p>
             <p>
-              The client is a public company in Thailand, which is the majority
-              shareholder of Bangkok Mass Transit System, and the operator of
-              the Skytrain and the Bangkok bus rapid transit system. Except for
-              the public mass transit, their business all involved
-              media/advertising, property/real estate, and associated service
-              business.
+              The client is one of the biggest public companies in Thailand,
+              which is responsible for the railway system. Except for the public
+              mass transit, their business all involved media/advertising,
+              property/real estate, and associated service business.
             </p>
           </div>
         </el-col>
